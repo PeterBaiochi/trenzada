@@ -30,21 +30,21 @@ export function AdminLayout() {
   const [searchQuery, setSearchQuery] = useState("");
 
   return (
-    <div className="flex h-screen bg-gray-50">
+    <div className="flex h-screen bg-[#0a0a0c]">
       {/* Sidebar */}
       <aside
         className={cn(
-          "bg-white border-r border-gray-200 flex flex-col transition-all duration-300",
+          "bg-[#121214] border-r border-[#27272a] flex flex-col transition-all duration-300",
           isSidebarOpen ? "w-64" : "w-0 overflow-hidden"
         )}
       >
         {/* Logo */}
-        <div className="p-6 border-b border-gray-200">
+        <div className="p-6 border-b border-[#27272a]">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 bg-gradient-to-br from-gray-800 to-black rounded-lg flex items-center justify-center">
-              <div className="w-6 h-6 bg-white rounded transform rotate-45"></div>
+              <div className="w-6 h-6 bg-[#121214] rounded transform rotate-45"></div>
             </div>
-            <span className="text-gray-900 text-xl font-bold">Admin Panel</span>
+            <span className="text-white text-xl font-bold">Admin Panel</span>
           </div>
         </div>
 
@@ -65,7 +65,7 @@ export function AdminLayout() {
                     "flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors",
                     isActive
                       ? "bg-gray-900 text-white"
-                      : "text-gray-600 hover:text-gray-900 hover:bg-gray-100"
+                      : "text-gray-400 hover:text-white hover:bg-[#1a1a1f]"
                   )}
                 >
                   <Icon className="w-4 h-4" />
@@ -77,10 +77,10 @@ export function AdminLayout() {
         </nav>
 
         {/* Logout */}
-        <div className="p-4 border-t border-gray-200 space-y-2">
+        <div className="p-4 border-t border-[#27272a] space-y-2">
           <Link
             to="/"
-            className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-gray-900 hover:bg-gray-100 w-full transition-colors"
+            className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-white hover:bg-[#1a1a1f] w-full transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
             <span>Voltar ao ScaleHub</span>
@@ -96,13 +96,13 @@ export function AdminLayout() {
       {/* Main Content */}
       <div className="flex-1 flex flex-col overflow-hidden">
         {/* Header */}
-        <header className="bg-white border-b border-gray-200 px-6 py-4">
+        <header className="bg-[#121214] border-b border-[#27272a] px-6 py-4">
           <div className="flex items-center justify-between gap-6">
             {/* Left Side */}
             <div className="flex items-center gap-4">
               <button
                 onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-                className="p-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-colors"
+                className="p-2 text-gray-400 hover:text-white hover:bg-[#1a1a1f] rounded-lg transition-colors"
               >
                 {isSidebarOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
               </button>
@@ -115,7 +115,7 @@ export function AdminLayout() {
                   placeholder="Buscar..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full pl-10 pr-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent"
+                  className="w-full pl-10 pr-4 py-2 bg-[#0a0a0c] border border-[#27272a] rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent"
                 />
               </div>
             </div>
@@ -123,7 +123,7 @@ export function AdminLayout() {
             {/* Right Side */}
             <div className="flex items-center gap-4">
               {/* Notifications */}
-              <button className="relative p-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-colors">
+              <button className="relative p-2 text-gray-400 hover:text-white hover:bg-[#1a1a1f] rounded-lg transition-colors">
                 <Bell className="w-5 h-5" />
                 <span className="absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full"></span>
               </button>
@@ -131,7 +131,7 @@ export function AdminLayout() {
               {/* Admin Profile */}
               <div className="flex items-center gap-3">
                 <div className="text-right">
-                  <p className="text-sm font-medium text-gray-900">Admin User</p>
+                  <p className="text-sm font-medium text-white">Admin User</p>
                   <p className="text-xs text-gray-500">Administrador</p>
                 </div>
                 <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
@@ -143,7 +143,7 @@ export function AdminLayout() {
         </header>
 
         {/* Page Content */}
-        <main className="flex-1 overflow-y-auto bg-gray-50 p-6">
+        <main className="flex-1 overflow-y-auto bg-[#0a0a0c] p-6">
           <Outlet />
         </main>
       </div>
