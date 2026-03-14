@@ -111,7 +111,7 @@ export function Indicacoes() {
           </div>
         </div>
 
-        <div className="bg-[#0d1410] border border-gray-800 rounded-xl p-6 hover:border-blue-500/30 transition-all">
+        <div className="bg-[#050505] border border-gray-800 rounded-xl p-6 hover:border-blue-500/30 transition-all">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-12 h-12 bg-blue-500/10 rounded-lg flex items-center justify-center">
               <UserPlus className="w-6 h-6 text-blue-400" />
@@ -123,7 +123,7 @@ export function Indicacoes() {
           </div>
         </div>
 
-        <div className="bg-[#0d1410] border border-gray-800 rounded-xl p-6 hover:border-purple-500/30 transition-all">
+        <div className="bg-[#050505] border border-gray-800 rounded-xl p-6 hover:border-purple-500/30 transition-all">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-12 h-12 bg-purple-500/10 rounded-lg flex items-center justify-center">
               <DollarSign className="w-6 h-6 text-purple-400" />
@@ -135,7 +135,7 @@ export function Indicacoes() {
           </div>
         </div>
 
-        <div className="bg-[#0d1410] border border-gray-800 rounded-xl p-6 hover:border-orange-500/30 transition-all">
+        <div className="bg-[#050505] border border-gray-800 rounded-xl p-6 hover:border-orange-500/30 transition-all">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-12 h-12 bg-orange-500/10 rounded-lg flex items-center justify-center">
               <TrendingUp className="w-6 h-6 text-orange-400" />
@@ -152,7 +152,7 @@ export function Indicacoes() {
       <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-gray-700 rounded-xl p-6">
         <div className="flex items-start gap-6">
           <div className="w-16 h-16 bg-gradient-to-br from-[#ffffff] to-[#ffffff] rounded-xl flex items-center justify-center shadow-[0_0_30px_rgba(255,255,255,0.3)]">
-            <Link2 className="w-8 h-8 text-black" />
+            <Link2 className="w-8 h-8 text-white" />
           </div>
           <div className="flex-1">
             <h2 className="text-xl font-bold text-white mb-2">Seu Link de Indicação</h2>
@@ -161,7 +161,7 @@ export function Indicacoes() {
             </p>
 
             <div className="flex items-center gap-3">
-              <div className="flex-1 bg-[#0a0f0d] border border-gray-800 rounded-lg px-4 py-3 flex items-center gap-3">
+              <div className="flex-1 bg-[#000000] border border-gray-800 rounded-lg px-4 py-3 flex items-center gap-3">
                 <code className="flex-1 text-white text-sm">{referralLink}</code>
                 <button
                   onClick={copyToClipboard}
@@ -187,7 +187,7 @@ export function Indicacoes() {
 
       {/* Share Options */}
       <div className="grid grid-cols-4 gap-4">
-        <button className="bg-[#0d1410] border border-gray-800 rounded-xl p-5 hover:border-[#ffffff]/50 hover:bg-[#ffffff]/5 transition-all group text-left">
+        <button className="bg-[#050505] border border-gray-800 rounded-xl p-5 hover:border-[#ffffff]/50 hover:bg-[#ffffff]/5 transition-all group text-left">
           <div className="w-12 h-12 bg-[#ffffff]/10 rounded-lg flex items-center justify-center mb-3 group-hover:bg-[#ffffff]/20 transition-colors">
             <Share2 className="w-6 h-6 text-[#ffffff]" />
           </div>
@@ -195,7 +195,7 @@ export function Indicacoes() {
           <p className="text-gray-400 text-xs">Redes sociais e WhatsApp</p>
         </button>
 
-        <button className="bg-[#0d1410] border border-gray-800 rounded-xl p-5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group text-left">
+        <button className="bg-[#050505] border border-gray-800 rounded-xl p-5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group text-left">
           <div className="w-12 h-12 bg-blue-500/10 rounded-lg flex items-center justify-center mb-3 group-hover:bg-blue-500/20 transition-colors">
             <Mail className="w-6 h-6 text-blue-400" />
           </div>
@@ -203,7 +203,7 @@ export function Indicacoes() {
           <p className="text-gray-400 text-xs">Template profissional</p>
         </button>
 
-        <button className="bg-[#0d1410] border border-gray-800 rounded-xl p-5 hover:border-purple-500/50 hover:bg-purple-500/5 transition-all group text-left">
+        <button className="bg-[#050505] border border-gray-800 rounded-xl p-5 hover:border-purple-500/50 hover:bg-purple-500/5 transition-all group text-left">
           <div className="w-12 h-12 bg-purple-500/10 rounded-lg flex items-center justify-center mb-3 group-hover:bg-purple-500/20 transition-colors">
             <MessageSquare className="w-6 h-6 text-purple-400" />
           </div>
@@ -211,7 +211,7 @@ export function Indicacoes() {
           <p className="text-gray-400 text-xs">Instagram e Telegram</p>
         </button>
 
-        <button className="bg-[#0d1410] border border-gray-800 rounded-xl p-5 hover:border-orange-500/50 hover:bg-orange-500/5 transition-all group text-left">
+        <button className="bg-[#050505] border border-gray-800 rounded-xl p-5 hover:border-orange-500/50 hover:bg-orange-500/5 transition-all group text-left">
           <div className="w-12 h-12 bg-orange-500/10 rounded-lg flex items-center justify-center mb-3 group-hover:bg-orange-500/20 transition-colors">
             <Sparkles className="w-6 h-6 text-orange-400" />
           </div>
@@ -221,7 +221,7 @@ export function Indicacoes() {
       </div>
 
       {/* Referrals Table */}
-      <div className="bg-[#0d1410] border border-gray-800 rounded-xl overflow-hidden">
+      <div className="bg-[#050505] border border-gray-800 rounded-xl overflow-hidden">
         <div className="border-b border-gray-800 p-6">
           <div className="flex items-center justify-between">
             <h2 className="text-xl font-bold text-white">Seus Indicados</h2>
