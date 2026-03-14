@@ -14,8 +14,8 @@ export function TermosDeUso() {
           {/* Left side - Title and metadata */}
           <div className="flex-1">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-[#ffffff] to-[#ffffff] rounded-xl flex items-center justify-center">
-                <FileText className="w-6 h-6 text-black" />
+              <div className="w-12 h-12 bg-gradient-to-br from-gray-600 to-gray-800 rounded-xl flex items-center justify-center">
+                <FileText className="w-6 h-6 text-white" />
               </div>
               <div>
                 <h1 className="text-3xl font-bold text-white">
@@ -60,7 +60,7 @@ export function TermosDeUso() {
       </div>
 
       {/* Content - Single Frame with Neon Green */}
-      <div className="bg-[#0d1410] border-2 border-[#ffffff]/30 rounded-xl p-8 shadow-[0_0_30px_rgba(255,255,255,0.15)] max-h-[600px] overflow-y-auto">
+      <div className="bg-[#050505] border-2 border-gray-600 rounded-xl p-8 shadow-[0_0_15px_rgba(156,163,175,0.25)] max-h-[600px] overflow-y-auto">
         <div className="space-y-8">
           {/* Section 1 */}
           <section>
@@ -84,7 +84,7 @@ export function TermosDeUso() {
             </div>
           </section>
 
-          <div className="border-t border-[#ffffff]/20"></div>
+          <div className="border-t border-gray-700"></div>
 
           {/* Section 2 */}
           <section>
@@ -122,7 +122,7 @@ export function TermosDeUso() {
             </div>
           </section>
 
-          <div className="border-t border-[#ffffff]/20"></div>
+          <div className="border-t border-gray-700"></div>
 
           {/* Section 3 */}
           <section>
@@ -159,7 +159,7 @@ export function TermosDeUso() {
             </div>
           </section>
 
-          <div className="border-t border-[#ffffff]/20"></div>
+          <div className="border-t border-gray-700"></div>
 
           {/* Section 4 */}
           <section>
@@ -196,7 +196,7 @@ export function TermosDeUso() {
             </div>
           </section>
 
-          <div className="border-t border-[#ffffff]/20"></div>
+          <div className="border-t border-gray-700"></div>
 
           {/* Section 5 */}
           <section>
@@ -220,7 +220,7 @@ export function TermosDeUso() {
             </div>
           </section>
 
-          <div className="border-t border-[#ffffff]/20"></div>
+          <div className="border-t border-gray-700"></div>
 
           {/* Section 6 */}
           <section>
@@ -242,7 +242,7 @@ export function TermosDeUso() {
             </div>
           </section>
 
-          <div className="border-t border-[#ffffff]/20"></div>
+          <div className="border-t border-gray-700"></div>
 
           {/* Section 7 */}
           <section>
@@ -265,7 +265,7 @@ export function TermosDeUso() {
             </div>
           </section>
 
-          <div className="border-t border-[#ffffff]/20"></div>
+          <div className="border-t border-gray-700"></div>
 
           {/* Section 8 */}
           <section>
@@ -287,7 +287,7 @@ export function TermosDeUso() {
             </div>
           </section>
 
-          <div className="border-t border-[#ffffff]/20"></div>
+          <div className="border-t border-gray-700"></div>
 
           {/* Section 9 */}
           <section>
@@ -309,7 +309,7 @@ export function TermosDeUso() {
             </div>
           </section>
 
-          <div className="border-t border-[#ffffff]/20"></div>
+          <div className="border-t border-gray-700"></div>
 
           {/* Section 10 */}
           <section>
@@ -326,7 +326,7 @@ export function TermosDeUso() {
             </div>
           </section>
 
-          <div className="border-t border-[#ffffff]/20"></div>
+          <div className="border-t border-gray-700"></div>
 
           {/* Section 11 */}
           <section>
@@ -338,7 +338,7 @@ export function TermosDeUso() {
                 Se você tiver dúvidas sobre estes Termos de Uso,
                 entre em contato conosco:
               </p>
-              <div className="bg-[#0a0f0d]/50 border border-[#ffffff]/20 rounded-lg p-4 mt-3">
+              <div className="bg-[#000000]/50 border border-[#ffffff]/20 rounded-lg p-4 mt-3">
                 <p>
                   <strong className="text-[#ffffff]">Email:</strong>{" "}
                   legal@scalehub.com.br
@@ -360,17 +360,17 @@ export function TermosDeUso() {
       </div>
 
       {/* Footer */}
-      <div className="mt-8 p-6 bg-[#0d1410] border-2 border-[#ffffff]/30 rounded-lg shadow-[0_0_20px_rgba(255,255,255,0.1)]">
+      <div className="mt-8 p-6 bg-[#050505] border-2 border-[#ffffff]/30 rounded-lg shadow-[0_0_20px_rgba(255,255,255,0.1)]">
         <p className="text-sm text-gray-400 text-center">
           Ao usar a plataforma ScaleHub, você reconhece que leu,
           entendeu e concorda em estar vinculado a estes Termos
           de Uso.
         </p>
         <div className="flex justify-center gap-4 mt-4">
-          <button className="px-6 py-2 bg-[#ffffff] text-black font-semibold rounded-lg hover:bg-[#ffffff] transition-colors shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.5)]">
+          <button className="px-6 py-2 bg-gray-800 border border-gray-600 text-white font-semibold rounded-lg hover:bg-gray-700 transition-colors shadow-[0_0_12px_rgba(156,163,175,0.35)]">
             Aceitar Termos
           </button>
-          <button className="px-6 py-2 bg-gray-800 border border-[#ffffff]/30 text-white font-semibold rounded-lg hover:bg-gray-700 transition-colors">
+          <button className="px-6 py-2 bg-gray-800 border border-gray-600 text-white font-semibold rounded-lg hover:bg-gray-700 transition-colors">
             Baixar PDF
           </button>
         </div>
