@@ -25,7 +25,7 @@ export function VisaoGeral() {
           <p className="text-gray-400">Bem-vindo de volta, Gabriel 👋</p>
         </div>
         <div className="flex items-center gap-3">
-          <div className="bg-[#0d1410] border border-gray-800 rounded-lg px-4 py-2 flex items-center gap-2">
+          <div className="bg-[#050505] border border-gray-800 rounded-lg px-4 py-2 flex items-center gap-2">
             <div className="w-2 h-2 bg-[#ffffff] rounded-full animate-pulse"></div>
             <span className="text-sm text-gray-400">Atualizado agora</span>
           </div>
@@ -54,7 +54,7 @@ export function VisaoGeral() {
         </div>
 
         {/* Card 2: Vendas */}
-        <div className="bg-[#0d1410] border border-gray-800 rounded-xl p-6 relative overflow-hidden group hover:border-[#ffffff]/30 hover:shadow-[0_0_20px_rgba(255,255,255,0.1)] transition-all">
+        <div className="bg-[#050505] border border-gray-800 rounded-xl p-6 relative overflow-hidden group hover:border-[#ffffff]/30 hover:shadow-[0_0_20px_rgba(255,255,255,0.1)] transition-all">
           <div className="relative">
             <div className="flex items-center justify-between mb-4">
               <div className="w-12 h-12 bg-blue-500/10 rounded-lg flex items-center justify-center group-hover:bg-blue-500/20 transition-colors">
@@ -72,7 +72,7 @@ export function VisaoGeral() {
         </div>
 
         {/* Card 3: Cliques */}
-        <div className="bg-[#0d1410] border border-gray-800 rounded-xl p-6 relative overflow-hidden group hover:border-purple-500/30 hover:shadow-[0_0_20px_rgba(168,85,247,0.1)] transition-all">
+        <div className="bg-[#050505] border border-gray-800 rounded-xl p-6 relative overflow-hidden group hover:border-purple-500/30 hover:shadow-[0_0_20px_rgba(168,85,247,0.1)] transition-all">
           <div className="relative">
             <div className="flex items-center justify-between mb-4">
               <div className="w-12 h-12 bg-purple-500/10 rounded-lg flex items-center justify-center group-hover:bg-purple-500/20 transition-colors">
@@ -90,7 +90,7 @@ export function VisaoGeral() {
         </div>
 
         {/* Card 4: Indicações */}
-        <div className="bg-[#0d1410] border border-gray-800 rounded-xl p-6 relative overflow-hidden group hover:border-orange-500/30 hover:shadow-[0_0_20px_rgba(249,115,22,0.1)] transition-all">
+        <div className="bg-[#050505] border border-gray-800 rounded-xl p-6 relative overflow-hidden group hover:border-orange-500/30 hover:shadow-[0_0_20px_rgba(249,115,22,0.1)] transition-all">
           <div className="relative">
             <div className="flex items-center justify-between mb-4">
               <div className="w-12 h-12 bg-orange-500/10 rounded-lg flex items-center justify-center group-hover:bg-orange-500/20 transition-colors">
@@ -113,7 +113,7 @@ export function VisaoGeral() {
         <div className="absolute top-0 right-0 w-96 h-96 bg-[#ffffff]/5 rounded-full blur-3xl"></div>
         <div className="relative flex items-start gap-6">
           <div className="w-16 h-16 bg-gradient-to-br from-[#ffffff] to-[#ffffff] rounded-xl flex items-center justify-center flex-shrink-0 shadow-[0_0_30px_rgba(255,255,255,0.3)]">
-            <Heart className="w-8 h-8 text-black" />
+            <Heart className="w-8 h-8 text-white" />
           </div>
           <div className="flex-1">
             <div className="inline-flex items-center gap-2 bg-[#ffffff]/20 text-[#ffffff] text-xs font-semibold px-3 py-1.5 rounded-full mb-4 border border-[#ffffff]/30">
@@ -140,7 +140,7 @@ export function VisaoGeral() {
             </p>
           </div>
           <div className="text-center">
-            <div className="bg-[#0a0f0d] border border-gray-800 rounded-xl px-6 py-4 shadow-lg">
+            <div className="bg-[#000000] border border-gray-800 rounded-xl px-6 py-4 shadow-lg">
               <div className="flex items-center justify-center gap-2 text-[#ffffff] mb-2">
                 <Heart className="w-5 h-5" />
                 <span className="text-xs font-semibold tracking-wider">JUNTOS SOMOS</span>
@@ -154,7 +154,7 @@ export function VisaoGeral() {
       {/* Progress Section */}
       <div className="grid grid-cols-3 gap-4">
         {/* Nível Atual */}
-        <div className="bg-[#0d1410] border border-gray-800 rounded-xl p-6">
+        <div className="bg-[#050505] border border-gray-800 rounded-xl p-6">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-10 h-10 bg-gradient-to-br from-gray-400 to-gray-600 rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(156,163,175,0.3)]">
               <Award className="w-5 h-5 text-white" />
@@ -177,7 +177,7 @@ export function VisaoGeral() {
         </div>
 
         {/* Saldo Pendente */}
-        <div className="bg-[#0d1410] border border-gray-800 rounded-xl p-6">
+        <div className="bg-[#050505] border border-gray-800 rounded-xl p-6">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-10 h-10 bg-yellow-500/10 rounded-lg flex items-center justify-center">
               <Clock className="w-5 h-5 text-yellow-400" />
@@ -196,7 +196,7 @@ export function VisaoGeral() {
         </div>
 
         {/* Meta do Mês */}
-        <div className="bg-[#0d1410] border border-gray-800 rounded-xl p-6">
+        <div className="bg-[#050505] border border-gray-800 rounded-xl p-6">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-10 h-10 bg-[#ffffff]/10 rounded-lg flex items-center justify-center">
               <Target className="w-5 h-5 text-[#ffffff]" />
@@ -220,7 +220,7 @@ export function VisaoGeral() {
 
       {/* Quick Actions */}
       <div className="grid grid-cols-4 gap-4">
-        <button className="bg-[#0d1410] border border-gray-800 rounded-xl p-4 hover:border-[#ffffff]/50 hover:bg-[#ffffff]/5 transition-all group text-left">
+        <button className="bg-[#050505] border border-gray-800 rounded-xl p-4 hover:border-[#ffffff]/50 hover:bg-[#ffffff]/5 transition-all group text-left">
           <div className="w-10 h-10 bg-[#ffffff]/10 rounded-lg flex items-center justify-center mb-3 group-hover:bg-[#ffffff]/20 transition-colors">
             <Target className="w-5 h-5 text-[#ffffff]" />
           </div>
@@ -228,7 +228,7 @@ export function VisaoGeral() {
           <p className="text-gray-400 text-xs">Acesse materiais promocionais</p>
         </button>
 
-        <button className="bg-[#0d1410] border border-gray-800 rounded-xl p-4 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group text-left">
+        <button className="bg-[#050505] border border-gray-800 rounded-xl p-4 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group text-left">
           <div className="w-10 h-10 bg-blue-500/10 rounded-lg flex items-center justify-center mb-3 group-hover:bg-blue-500/20 transition-colors">
             <Users className="w-5 h-5 text-blue-400" />
           </div>
@@ -236,7 +236,7 @@ export function VisaoGeral() {
           <p className="text-gray-400 text-xs">Gerencie sua rede</p>
         </button>
 
-        <button className="bg-[#0d1410] border border-gray-800 rounded-xl p-4 hover:border-purple-500/50 hover:bg-purple-500/5 transition-all group text-left">
+        <button className="bg-[#050505] border border-gray-800 rounded-xl p-4 hover:border-purple-500/50 hover:bg-purple-500/5 transition-all group text-left">
           <div className="w-10 h-10 bg-purple-500/10 rounded-lg flex items-center justify-center mb-3 group-hover:bg-purple-500/20 transition-colors">
             <DollarSign className="w-5 h-5 text-purple-400" />
           </div>
@@ -244,7 +244,7 @@ export function VisaoGeral() {
           <p className="text-gray-400 text-xs">Histórico e saques</p>
         </button>
 
-        <button className="bg-[#0d1410] border border-gray-800 rounded-xl p-4 hover:border-orange-500/50 hover:bg-orange-500/5 transition-all group text-left">
+        <button className="bg-[#050505] border border-gray-800 rounded-xl p-4 hover:border-orange-500/50 hover:bg-orange-500/5 transition-all group text-left">
           <div className="w-10 h-10 bg-orange-500/10 rounded-lg flex items-center justify-center mb-3 group-hover:bg-orange-500/20 transition-colors">
             <CheckCircle2 className="w-5 h-5 text-orange-400" />
           </div>
