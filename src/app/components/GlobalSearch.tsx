@@ -159,7 +159,7 @@ const categoryConfig = {
     label: "Usuários",
     icon: User,
     color: "text-white",
-    bgColor: "bg-white/10",
+    bgColor: "bg-[#121214]/10",
   },
   materiais: {
     label: "Materiais",
@@ -264,7 +264,7 @@ export function GlobalSearch() {
           onChange={(e) => setQuery(e.target.value)}
           onFocus={() => setIsOpen(true)}
           placeholder="Buscar campanhas, produtos, links..."
-          className="w-full bg-[#0a0f0d] border border-gray-700 rounded-lg pl-10 pr-10 py-2.5 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#ffffff] transition-colors"
+          className="w-full bg-[#000000] border border-gray-700 rounded-lg pl-10 pr-10 py-2.5 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#ffffff] transition-colors"
         />
         {query && (
           <button
@@ -278,11 +278,11 @@ export function GlobalSearch() {
 
       {/* Results Dropdown */}
       {isOpen && (
-        <div className="absolute top-full left-0 right-0 mt-2 bg-[#0d1410] border-2 border-[#ffffff]/30 rounded-xl shadow-[0_0_30px_rgba(255,255,255,0.2)] max-h-[500px] overflow-y-auto z-50">
+        <div className="absolute top-full left-0 right-0 mt-2 bg-[#050505] border-2 border-[#ffffff]/30 rounded-xl shadow-[0_0_30px_rgba(255,255,255,0.2)] max-h-[500px] overflow-y-auto z-50">
           {query.trim() === "" ? (
             // Empty state - suggestions
             <div className="p-6 text-center">
-              <Search className="w-12 h-12 text-gray-600 mx-auto mb-3" />
+              <Search className="w-12 h-12 text-gray-400 mx-auto mb-3" />
               <p className="text-gray-400 text-sm mb-2">
                 Busca inteligente em toda plataforma
               </p>
@@ -293,7 +293,7 @@ export function GlobalSearch() {
           ) : results.length === 0 ? (
             // No results
             <div className="p-6 text-center">
-              <Search className="w-12 h-12 text-gray-600 mx-auto mb-3" />
+              <Search className="w-12 h-12 text-gray-400 mx-auto mb-3" />
               <p className="text-gray-400 text-sm mb-1">
                 Nenhum resultado encontrado
               </p>
@@ -317,7 +317,7 @@ export function GlobalSearch() {
                       <span className="text-xs font-semibold text-gray-400 uppercase">
                         {config.label}
                       </span>
-                      <span className="text-xs text-gray-600">
+                      <span className="text-xs text-gray-400">
                         ({items.length})
                       </span>
                     </div>
@@ -328,7 +328,7 @@ export function GlobalSearch() {
                         <button
                           key={result.id}
                           onClick={() => handleResultClick(result)}
-                          className="w-full flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-[#0a0f0d] transition-colors group text-left"
+                          className="w-full flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-[#000000] transition-colors group text-left"
                         >
                           <div
                             className={`w-10 h-10 ${config.bgColor} rounded-lg flex items-center justify-center flex-shrink-0`}
@@ -350,7 +350,7 @@ export function GlobalSearch() {
                               <span className="text-xs text-gray-500">
                                 {result.metadata}
                               </span>
-                              <ArrowRight className="w-4 h-4 text-gray-600 group-hover:text-[#ffffff] transition-colors" />
+                              <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-[#ffffff] transition-colors" />
                             </div>
                           )}
                         </button>
@@ -374,7 +374,7 @@ export function GlobalSearch() {
 
       {/* Overlay */}
       {isOpen && query && (
-        <div className="fixed inset-0 bg-black/50 z-40" onClick={() => setIsOpen(false)} />
+        <div className="fixed inset-0 bg-[#000000]/50 z-40" onClick={() => setIsOpen(false)} />
       )}
     </div>
   );
