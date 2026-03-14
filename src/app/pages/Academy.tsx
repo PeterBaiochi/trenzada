@@ -124,7 +124,7 @@ export function Academy() {
 
       {/* Stats Cards */}
       <div className="grid grid-cols-4 gap-4">
-        <div className="bg-[#0d1410] border border-gray-800 rounded-xl p-6 hover:border-[#ffffff]/30 transition-all">
+        <div className="bg-[#050505] border border-gray-800 rounded-xl p-6 hover:border-[#ffffff]/30 transition-all">
           <div className="flex items-center gap-3 mb-2">
             <div className="w-12 h-12 bg-[#ffffff]/10 rounded-lg flex items-center justify-center">
               <BookOpen className="w-6 h-6 text-[#ffffff]" />
@@ -136,7 +136,7 @@ export function Academy() {
           </div>
         </div>
 
-        <div className="bg-[#0d1410] border border-gray-800 rounded-xl p-6 hover:border-blue-500/30 transition-all">
+        <div className="bg-[#050505] border border-gray-800 rounded-xl p-6 hover:border-blue-500/30 transition-all">
           <div className="flex items-center gap-3 mb-2">
             <div className="w-12 h-12 bg-blue-500/10 rounded-lg flex items-center justify-center">
               <Clock className="w-6 h-6 text-blue-400" />
@@ -148,7 +148,7 @@ export function Academy() {
           </div>
         </div>
 
-        <div className="bg-[#0d1410] border border-gray-800 rounded-xl p-6 hover:border-purple-500/30 transition-all">
+        <div className="bg-[#050505] border border-gray-800 rounded-xl p-6 hover:border-purple-500/30 transition-all">
           <div className="flex items-center gap-3 mb-2">
             <div className="w-12 h-12 bg-purple-500/10 rounded-lg flex items-center justify-center">
               <Award className="w-6 h-6 text-purple-400" />
@@ -180,11 +180,11 @@ export function Academy() {
           <div className="flex items-start gap-6">
             <div className="relative">
               <div className={`w-48 h-28 bg-gradient-to-br ${getThumbnailGradient("gradient-blue")} rounded-lg flex items-center justify-center`}>
-                <div className="w-12 h-12 bg-black/40 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:bg-black/60 transition-all">
+                <div className="w-12 h-12 bg-[#000000]/40 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:bg-[#000000]/60 transition-all">
                   <Play className="w-6 h-6 text-white ml-1" />
                 </div>
               </div>
-              <div className="absolute bottom-2 right-2 bg-black/80 backdrop-blur-sm px-2 py-1 rounded text-xs text-white font-semibold">
+              <div className="absolute bottom-2 right-2 bg-[#000000]/80 backdrop-blur-sm px-2 py-1 rounded text-xs text-white font-semibold">
                 3h 15min
               </div>
             </div>
@@ -205,7 +205,7 @@ export function Academy() {
                 </div>
               </div>
             </div>
-            <button className="bg-[#ffffff] hover:bg-[#ffffff] text-black px-6 py-3 rounded-lg font-semibold flex items-center gap-2 transition-all shadow-[0_0_20px_rgba(255,255,255,0.3)]">
+            <button className="bg-[#ffffff] hover:bg-[#ffffff] text-white px-6 py-3 rounded-lg font-semibold flex items-center gap-2 transition-all shadow-[0_0_20px_rgba(255,255,255,0.3)]">
               <Play className="w-5 h-5" />
               Continuar
             </button>
@@ -218,16 +218,16 @@ export function Academy() {
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-xl font-bold text-white">Todos os Cursos</h2>
           <div className="flex items-center gap-2">
-            <button className="bg-[#0d1410] border border-gray-800 rounded-lg px-4 py-2 text-sm text-gray-400 hover:text-white hover:border-gray-700 transition-all">
+            <button className="bg-[#050505] border border-gray-800 rounded-lg px-4 py-2 text-sm text-gray-400 hover:text-white hover:border-gray-700 transition-all">
               Todos
             </button>
-            <button className="bg-[#0d1410] border border-gray-800 rounded-lg px-4 py-2 text-sm text-gray-400 hover:text-white hover:border-gray-700 transition-all">
+            <button className="bg-[#050505] border border-gray-800 rounded-lg px-4 py-2 text-sm text-gray-400 hover:text-white hover:border-gray-700 transition-all">
               Iniciante
             </button>
-            <button className="bg-[#0d1410] border border-gray-800 rounded-lg px-4 py-2 text-sm text-gray-400 hover:text-white hover:border-gray-700 transition-all">
+            <button className="bg-[#050505] border border-gray-800 rounded-lg px-4 py-2 text-sm text-gray-400 hover:text-white hover:border-gray-700 transition-all">
               Intermediário
             </button>
-            <button className="bg-[#0d1410] border border-gray-800 rounded-lg px-4 py-2 text-sm text-gray-400 hover:text-white hover:border-gray-700 transition-all">
+            <button className="bg-[#050505] border border-gray-800 rounded-lg px-4 py-2 text-sm text-gray-400 hover:text-white hover:border-gray-700 transition-all">
               Avançado
             </button>
           </div>
@@ -237,37 +237,37 @@ export function Academy() {
           {courses.map((course) => (
             <div
               key={course.id}
-              className={`bg-[#0d1410] border border-gray-800 rounded-xl overflow-hidden hover:border-[#ffffff]/30 transition-all group ${course.locked ? "opacity-60" : ""
+              className={`bg-[#050505] border border-gray-800 rounded-xl overflow-hidden hover:border-[#ffffff]/30 transition-all group ${course.locked ? "opacity-60" : ""
                 }`}
             >
               {/* Thumbnail */}
               <div className="relative">
                 <div className={`h-40 bg-gradient-to-br ${getThumbnailGradient(course.thumbnail)} flex items-center justify-center`}>
                   {course.locked ? (
-                    <div className="w-16 h-16 bg-black/40 backdrop-blur-sm rounded-full flex items-center justify-center">
+                    <div className="w-16 h-16 bg-[#000000]/40 backdrop-blur-sm rounded-full flex items-center justify-center">
                       <Lock className="w-8 h-8 text-white" />
                     </div>
                   ) : (
-                    <div className="w-16 h-16 bg-black/40 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:bg-black/60 transition-all">
+                    <div className="w-16 h-16 bg-[#000000]/40 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:bg-[#000000]/60 transition-all">
                       <Play className="w-8 h-8 text-white ml-1" />
                     </div>
                   )}
                 </div>
                 <div className="absolute top-3 left-3 flex items-center gap-2">
-                  <span className={`px-2 py-1 rounded text-xs font-semibold ${course.level === "Iniciante" ? "bg-white/20 text-white" :
+                  <span className={`px-2 py-1 rounded text-xs font-semibold ${course.level === "Iniciante" ? "bg-[#121214]/20 text-white" :
                       course.level === "Intermediário" ? "bg-blue-500/20 text-blue-400" :
                         "bg-purple-500/20 text-purple-400"
                     }`}>
                     {course.level}
                   </span>
                 </div>
-                <div className="absolute bottom-3 right-3 bg-black/80 backdrop-blur-sm px-2 py-1 rounded text-xs text-white font-semibold flex items-center gap-1">
+                <div className="absolute bottom-3 right-3 bg-[#000000]/80 backdrop-blur-sm px-2 py-1 rounded text-xs text-white font-semibold flex items-center gap-1">
                   <Clock className="w-3 h-3" />
                   {course.duration}
                 </div>
                 {course.completed && (
                   <div className="absolute top-3 right-3 w-8 h-8 bg-[#ffffff] rounded-full flex items-center justify-center">
-                    <CheckCircle2 className="w-5 h-5 text-black" />
+                    <CheckCircle2 className="w-5 h-5 text-white" />
                   </div>
                 )}
               </div>
