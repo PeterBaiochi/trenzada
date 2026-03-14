@@ -111,7 +111,7 @@ export function Premiacoes() {
       <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-gray-700 rounded-xl p-6">
         <div className="flex items-start gap-6">
           <div className="w-20 h-20 bg-gradient-to-br from-[#ffffff] to-[#ffffff] rounded-xl flex items-center justify-center shadow-[0_0_30px_rgba(255,255,255,0.3)]">
-            <Trophy className="w-10 h-10 text-black" />
+            <Trophy className="w-10 h-10 text-white" />
           </div>
           <div className="flex-1">
             <h2 className="text-2xl font-bold text-white mb-2">Seus Pontos</h2>
@@ -130,11 +130,11 @@ export function Premiacoes() {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4">
-            <div className="bg-[#0a0f0d] border border-gray-800 rounded-lg p-4 text-center">
+            <div className="bg-[#000000] border border-gray-800 rounded-lg p-4 text-center">
               <p className="text-2xl font-bold text-white mb-1">{userRewards.totalRedeemed}</p>
               <p className="text-xs text-gray-400">Resgates</p>
             </div>
-            <div className="bg-[#0a0f0d] border border-gray-800 rounded-lg p-4 text-center">
+            <div className="bg-[#000000] border border-gray-800 rounded-lg p-4 text-center">
               <p className="text-2xl font-bold text-white mb-1">{userRewards.availableRewards}</p>
               <p className="text-xs text-gray-400">Disponíveis</p>
             </div>
@@ -146,7 +146,7 @@ export function Premiacoes() {
       <div>
         <h2 className="text-xl font-bold text-white mb-4">Como Ganhar Pontos</h2>
         <div className="grid grid-cols-4 gap-4">
-          <div className="bg-[#0d1410] border border-gray-800 rounded-xl p-5 hover:border-[#ffffff]/30 transition-all">
+          <div className="bg-[#050505] border border-gray-800 rounded-xl p-5 hover:border-[#ffffff]/30 transition-all">
             <div className="w-12 h-12 bg-[#ffffff]/10 rounded-lg flex items-center justify-center mb-3">
               <Target className="w-6 h-6 text-[#ffffff]" />
             </div>
@@ -155,7 +155,7 @@ export function Premiacoes() {
             <p className="text-xs text-gray-400">Por venda realizada</p>
           </div>
 
-          <div className="bg-[#0d1410] border border-gray-800 rounded-xl p-5 hover:border-blue-500/30 transition-all">
+          <div className="bg-[#050505] border border-gray-800 rounded-xl p-5 hover:border-blue-500/30 transition-all">
             <div className="w-12 h-12 bg-blue-500/10 rounded-lg flex items-center justify-center mb-3">
               <Trophy className="w-6 h-6 text-blue-400" />
             </div>
@@ -164,7 +164,7 @@ export function Premiacoes() {
             <p className="text-xs text-gray-400">Top 10 mensal</p>
           </div>
 
-          <div className="bg-[#0d1410] border border-gray-800 rounded-xl p-5 hover:border-purple-500/30 transition-all">
+          <div className="bg-[#050505] border border-gray-800 rounded-xl p-5 hover:border-purple-500/30 transition-all">
             <div className="w-12 h-12 bg-purple-500/10 rounded-lg flex items-center justify-center mb-3">
               <Star className="w-6 h-6 text-purple-400" />
             </div>
@@ -173,7 +173,7 @@ export function Premiacoes() {
             <p className="text-xs text-gray-400">Por indicado ativo</p>
           </div>
 
-          <div className="bg-[#0d1410] border border-gray-800 rounded-xl p-5 hover:border-orange-500/30 transition-all">
+          <div className="bg-[#050505] border border-gray-800 rounded-xl p-5 hover:border-orange-500/30 transition-all">
             <div className="w-12 h-12 bg-orange-500/10 rounded-lg flex items-center justify-center mb-3">
               <Zap className="w-6 h-6 text-orange-400" />
             </div>
@@ -191,12 +191,12 @@ export function Premiacoes() {
           {availableRewards.map((reward) => (
             <div
               key={reward.id}
-              className={`bg-[#0d1410] border border-gray-800 rounded-xl overflow-hidden hover:border-[#ffffff]/30 transition-all ${!reward.available ? "opacity-60" : ""
+              className={`bg-[#050505] border border-gray-800 rounded-xl overflow-hidden hover:border-[#ffffff]/30 transition-all ${!reward.available ? "opacity-60" : ""
                 }`}
             >
               <div className="p-6">
                 <div className="flex items-start justify-between mb-4">
-                  <div className={`w-14 h-14 rounded-lg flex items-center justify-center ${reward.available ? "bg-[#ffffff]/10 text-[#ffffff]" : "bg-gray-800 text-gray-600"
+                  <div className={`w-14 h-14 rounded-lg flex items-center justify-center ${reward.available ? "bg-[#ffffff]/10 text-[#ffffff]" : "bg-gray-800 text-gray-400"
                     }`}>
                     {getIconComponent(reward.icon)}
                   </div>
@@ -214,7 +214,7 @@ export function Premiacoes() {
                     <span className="text-xl font-bold text-white">{reward.points.toLocaleString('pt-BR')}</span>
                   </div>
                   {reward.available ? (
-                    <button className="bg-[#ffffff] hover:bg-[#ffffff] text-black px-4 py-2 rounded-lg text-sm font-semibold transition-all">
+                    <button className="bg-[#ffffff] hover:bg-[#ffffff] text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all">
                       Resgatar
                     </button>
                   ) : (
@@ -233,7 +233,7 @@ export function Premiacoes() {
       {/* Achievements */}
       <div>
         <h2 className="text-xl font-bold text-white mb-4">Conquistas</h2>
-        <div className="bg-[#0d1410] border border-gray-800 rounded-xl p-6">
+        <div className="bg-[#050505] border border-gray-800 rounded-xl p-6">
           <div className="grid grid-cols-3 gap-4">
             {achievements.map((achievement) => (
               <div
@@ -244,8 +244,8 @@ export function Premiacoes() {
                   }`}
               >
                 <div className={`w-12 h-12 rounded-full flex items-center justify-center ${achievement.completed
-                    ? "bg-[#ffffff] text-black"
-                    : "bg-gray-800 text-gray-600"
+                    ? "bg-[#ffffff] text-white"
+                    : "bg-gray-800 text-gray-400"
                   }`}>
                   {achievement.completed ? (
                     <CheckCircle2 className="w-6 h-6" />
