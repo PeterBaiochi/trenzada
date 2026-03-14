@@ -85,7 +85,7 @@ export function Compliance() {
       <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-gray-700 rounded-xl p-6">
         <div className="flex items-start gap-6">
           <div className="w-20 h-20 bg-gradient-to-br from-[#ffffff] to-[#ffffff] rounded-xl flex items-center justify-center shadow-[0_0_30px_rgba(255,255,255,0.3)]">
-            <ShieldCheck className="w-10 h-10 text-black" />
+            <ShieldCheck className="w-10 h-10 text-white" />
           </div>
           <div className="flex-1">
             <div className="flex items-center gap-3 mb-2">
@@ -97,15 +97,15 @@ export function Compliance() {
             </div>
             <p className="text-gray-400 mb-4">Sua conta está em total conformidade com nossas políticas</p>
             <div className="grid grid-cols-3 gap-4">
-              <div className="bg-[#0a0f0d] border border-gray-800 rounded-lg p-4">
+              <div className="bg-[#000000] border border-gray-800 rounded-lg p-4">
                 <p className="text-gray-400 text-xs mb-1">DOCUMENTOS ENVIADOS</p>
                 <p className="text-2xl font-bold text-white">{complianceStatus.documentsSubmitted}</p>
               </div>
-              <div className="bg-[#0a0f0d] border border-gray-800 rounded-lg p-4">
+              <div className="bg-[#000000] border border-gray-800 rounded-lg p-4">
                 <p className="text-gray-400 text-xs mb-1">APROVADOS</p>
                 <p className="text-2xl font-bold text-[#ffffff]">{complianceStatus.documentsApproved}</p>
               </div>
-              <div className="bg-[#0a0f0d] border border-gray-800 rounded-lg p-4">
+              <div className="bg-[#000000] border border-gray-800 rounded-lg p-4">
                 <p className="text-gray-400 text-xs mb-1">PENDENTES</p>
                 <p className="text-2xl font-bold text-yellow-400">{complianceStatus.documentsPending}</p>
               </div>
@@ -117,7 +117,7 @@ export function Compliance() {
       {/* Documents */}
       <div>
         <h2 className="text-xl font-bold text-white mb-4">Documentação</h2>
-        <div className="bg-[#0d1410] border border-gray-800 rounded-xl overflow-hidden">
+        <div className="bg-[#050505] border border-gray-800 rounded-xl overflow-hidden">
           <div className="divide-y divide-gray-800">
             {documents.map((doc) => (
               <div key={doc.id} className="p-6 hover:bg-gray-800/30 transition-colors">
@@ -131,7 +131,7 @@ export function Compliance() {
                     ) : doc.status === "pending" ? (
                       <Clock className="w-6 h-6 text-yellow-400" />
                     ) : (
-                      <FileText className="w-6 h-6 text-gray-600" />
+                      <FileText className="w-6 h-6 text-gray-400" />
                     )}
                   </div>
 
@@ -165,7 +165,7 @@ export function Compliance() {
                       </span>
                     )}
                     {doc.status === "missing" && (
-                      <button className="bg-[#ffffff] hover:bg-[#ffffff] text-black px-4 py-2 rounded-lg text-sm font-semibold transition-all">
+                      <button className="bg-[#ffffff] hover:bg-[#ffffff] text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all">
                         Enviar
                       </button>
                     )}
@@ -184,7 +184,7 @@ export function Compliance() {
           return (
             <div
               key={guideline.title}
-              className={`bg-[#0d1410] border rounded-xl p-6 ${guideline.color === "green" ? "border-[#ffffff]/30" : "border-red-500/30"
+              className={`bg-[#050505] border rounded-xl p-6 ${guideline.color === "green" ? "border-[#ffffff]/30" : "border-red-500/30"
                 }`}
             >
               <div className="flex items-center gap-3 mb-4">
@@ -229,7 +229,7 @@ export function Compliance() {
 
       {/* Download Policies */}
       <div className="grid grid-cols-3 gap-4">
-        <button className="bg-[#0d1410] border border-gray-800 rounded-xl p-5 hover:border-[#ffffff]/50 transition-all text-left group">
+        <button className="bg-[#050505] border border-gray-800 rounded-xl p-5 hover:border-[#ffffff]/50 transition-all text-left group">
           <div className="flex items-center gap-3 mb-3">
             <div className="w-10 h-10 bg-[#ffffff]/10 rounded-lg flex items-center justify-center group-hover:bg-[#ffffff]/20 transition-colors">
               <Download className="w-5 h-5 text-[#ffffff]" />
@@ -239,7 +239,7 @@ export function Compliance() {
           <p className="text-gray-400 text-xs">Baixar PDF</p>
         </button>
 
-        <button className="bg-[#0d1410] border border-gray-800 rounded-xl p-5 hover:border-blue-500/50 transition-all text-left group">
+        <button className="bg-[#050505] border border-gray-800 rounded-xl p-5 hover:border-blue-500/50 transition-all text-left group">
           <div className="flex items-center gap-3 mb-3">
             <div className="w-10 h-10 bg-blue-500/10 rounded-lg flex items-center justify-center group-hover:bg-blue-500/20 transition-colors">
               <Download className="w-5 h-5 text-blue-400" />
@@ -249,7 +249,7 @@ export function Compliance() {
           <p className="text-gray-400 text-xs">Baixar PDF</p>
         </button>
 
-        <button className="bg-[#0d1410] border border-gray-800 rounded-xl p-5 hover:border-purple-500/50 transition-all text-left group">
+        <button className="bg-[#050505] border border-gray-800 rounded-xl p-5 hover:border-purple-500/50 transition-all text-left group">
           <div className="flex items-center gap-3 mb-3">
             <div className="w-10 h-10 bg-purple-500/10 rounded-lg flex items-center justify-center group-hover:bg-purple-500/20 transition-colors">
               <Download className="w-5 h-5 text-purple-400" />
