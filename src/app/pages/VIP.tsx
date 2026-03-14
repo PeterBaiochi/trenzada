@@ -173,7 +173,7 @@ export function VIP() {
       {/* Header */}
       <div className="flex items-center gap-3 mb-8">
         <div className="w-12 h-12 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-xl flex items-center justify-center shadow-[0_0_30px_rgba(234,179,8,0.4)]">
-          <Crown className="w-6 h-6 text-black" />
+          <Crown className="w-6 h-6 text-white" />
         </div>
         <div>
           <h1 className="text-3xl font-bold text-white">Programa VIP</h1>
@@ -195,17 +195,17 @@ export function VIP() {
             programa de elite com os maiores afiliados da plataforma.
           </p>
           <div className="flex flex-wrap gap-4">
-            <div className="flex items-center gap-2 bg-black/30 rounded-lg px-4 py-2">
+            <div className="flex items-center gap-2 bg-[#000000]/30 rounded-lg px-4 py-2">
               <DollarSign className="w-5 h-5 text-[#ffffff]" />
               <span className="text-white font-semibold">
                 Comissões até +15%
               </span>
             </div>
-            <div className="flex items-center gap-2 bg-black/30 rounded-lg px-4 py-2">
+            <div className="flex items-center gap-2 bg-[#000000]/30 rounded-lg px-4 py-2">
               <Zap className="w-5 h-5 text-yellow-400" />
               <span className="text-white font-semibold">Suporte Prioritário</span>
             </div>
-            <div className="flex items-center gap-2 bg-black/30 rounded-lg px-4 py-2">
+            <div className="flex items-center gap-2 bg-[#000000]/30 rounded-lg px-4 py-2">
               <Gift className="w-5 h-5 text-pink-400" />
               <span className="text-white font-semibold">Bônus Exclusivos</span>
             </div>
@@ -226,7 +226,7 @@ export function VIP() {
             return (
               <div
                 key={item.rank}
-                className="bg-[#0d1410] border-2 border-gray-800 rounded-xl p-6 hover:border-[#ffffff]/50 transition-all"
+                className="bg-[#050505] border-2 border-gray-800 rounded-xl p-6 hover:border-[#ffffff]/50 transition-all"
               >
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 bg-gradient-to-br from-[#ffffff]/20 to-[#ffffff]/20 rounded-xl flex items-center justify-center">
@@ -267,7 +267,7 @@ export function VIP() {
             return (
               <div
                 key={level.id}
-                className={`bg-[#0d1410] border-3 ${level.borderColor} rounded-2xl overflow-hidden transition-all hover:scale-105 ${level.glowColor} ${
+                className={`bg-[#050505] border-3 ${level.borderColor} rounded-2xl overflow-hidden transition-all hover:scale-105 ${level.glowColor} ${
                   isSelected ? "ring-2 ring-white" : ""
                 }`}
                 onClick={() => setSelectedLevel(level.id)}
@@ -276,7 +276,7 @@ export function VIP() {
                 <div
                   className={`bg-gradient-to-br ${level.bgGradient} p-6 relative overflow-hidden`}
                 >
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -translate-y-16 translate-x-16"></div>
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-[#121214]/5 rounded-full -translate-y-16 translate-x-16"></div>
                   <div className="relative z-10">
                     <Icon className={`w-12 h-12 ${level.color} mb-3`} />
                     <h3 className={`text-2xl font-bold ${level.color} mb-2`}>
@@ -333,7 +333,7 @@ export function VIP() {
                   {/* Button */}
                   <button
                     onClick={() => handleSolicitacao(level.name)}
-                    className={`w-full py-3 rounded-lg font-bold text-black bg-gradient-to-r ${level.bgGradient} hover:opacity-90 transition-all ${level.glowColor} flex items-center justify-center gap-2`}
+                    className={`w-full py-3 rounded-lg font-bold text-white bg-gradient-to-r ${level.bgGradient} hover:opacity-90 transition-all ${level.glowColor} flex items-center justify-center gap-2`}
                   >
                     <Crown className="w-5 h-5" />
                     Solicitar {level.name}
@@ -346,7 +346,7 @@ export function VIP() {
       </div>
 
       {/* Info Box */}
-      <div className="bg-[#0d1410]/50 border border-gray-800 rounded-xl p-6">
+      <div className="bg-[#050505]/50 border border-gray-800 rounded-xl p-6">
         <h3 className="text-lg font-bold text-[#ffffff] mb-4">
           📋 Como funciona o processo:
         </h3>
