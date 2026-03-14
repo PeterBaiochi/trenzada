@@ -36,7 +36,7 @@ const copyTypes = [
     id: "whatsapp" as CopyType,
     label: "WhatsApp",
     icon: MessageCircle,
-    color: "bg-white/10 text-white border-white/30 hover:bg-white/20",
+    color: "bg-[#121214]/10 text-white border-white/30 hover:bg-[#121214]/20",
   },
 ];
 
@@ -198,7 +198,7 @@ export function CopyIA() {
       {/* Header */}
       <div className="flex items-center gap-3 mb-8">
         <div className="w-12 h-12 bg-gradient-to-br from-[#ffffff] to-[#ffffff] rounded-xl flex items-center justify-center">
-          <Wand2 className="w-6 h-6 text-black" />
+          <Wand2 className="w-6 h-6 text-white" />
         </div>
         <div>
           <h1 className="text-3xl font-bold text-white">Gerador de Copy com IA</h1>
@@ -209,7 +209,7 @@ export function CopyIA() {
       </div>
 
       {/* Main Card */}
-      <div className="bg-[#0d1410] border-2 border-[#ffffff]/30 rounded-xl shadow-[0_0_30px_rgba(255,255,255,0.15)] p-8 mb-6">
+      <div className="bg-[#050505] border-2 border-[#ffffff]/30 rounded-xl shadow-[0_0_30px_rgba(255,255,255,0.15)] p-8 mb-6">
         {/* Description Field */}
         <div className="mb-6">
           <label className="block text-sm font-semibold text-gray-300 mb-3">
@@ -219,7 +219,7 @@ export function CopyIA() {
             value={description}
             onChange={(e) => setDescription(e.target.value)}
             placeholder="Ex: Quero criar um email para divulgar meu novo curso de marketing digital, focado em iniciantes que querem vender online..."
-            className="w-full h-32 bg-[#0a0f0d] border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-[#ffffff] resize-none"
+            className="w-full h-32 bg-[#000000] border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-[#ffffff] resize-none"
           />
           <p className="text-xs text-gray-500 mt-2">
             Seja específico sobre seu produto, público-alvo e objetivo
@@ -259,7 +259,7 @@ export function CopyIA() {
         <button
           onClick={handleGenerate}
           disabled={!selectedType || !description.trim() || isGenerating}
-          className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-[#ffffff] text-black font-bold text-lg rounded-lg hover:bg-[#ffffff] transition-all shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.5)] disabled:opacity-50 disabled:cursor-not-allowed disabled:shadow-none"
+          className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-[#ffffff] text-white font-bold text-lg rounded-lg hover:bg-[#ffffff] transition-all shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.5)] disabled:opacity-50 disabled:cursor-not-allowed disabled:shadow-none"
         >
           {isGenerating ? (
             <>
@@ -277,7 +277,7 @@ export function CopyIA() {
 
       {/* Result Area */}
       {generatedContent && (
-        <div className="bg-[#0d1410] border-2 border-[#ffffff]/30 rounded-xl shadow-[0_0_30px_rgba(255,255,255,0.15)] overflow-hidden">
+        <div className="bg-[#050505] border-2 border-[#ffffff]/30 rounded-xl shadow-[0_0_30px_rgba(255,255,255,0.15)] overflow-hidden">
           <div className="p-6 border-b border-gray-800 flex items-center justify-between">
             <div className="flex items-center gap-2">
               <Sparkles className="w-5 h-5 text-[#ffffff]" />
@@ -300,7 +300,7 @@ export function CopyIA() {
               </button>
               <button
                 onClick={handleSave}
-                className="flex items-center gap-2 px-4 py-2 bg-[#ffffff] text-black font-semibold rounded-lg hover:bg-[#ffffff] transition-colors"
+                className="flex items-center gap-2 px-4 py-2 bg-[#ffffff] text-white font-semibold rounded-lg hover:bg-[#ffffff] transition-colors"
               >
                 <Save className="w-4 h-4" />
                 Salvar
@@ -309,8 +309,8 @@ export function CopyIA() {
           </div>
 
           <div className="p-6">
-            <div className="bg-white rounded-lg p-6 min-h-[300px]">
-              <pre className="whitespace-pre-wrap font-sans text-gray-800 leading-relaxed">
+            <div className="bg-[#121214] rounded-lg p-6 min-h-[300px]">
+              <pre className="whitespace-pre-wrap font-sans text-gray-100 leading-relaxed">
                 {generatedContent}
               </pre>
             </div>
@@ -320,8 +320,8 @@ export function CopyIA() {
 
       {/* Empty State */}
       {!generatedContent && (
-        <div className="bg-[#0d1410] border-2 border-gray-800 border-dashed rounded-xl p-12 text-center">
-          <Sparkles className="w-16 h-16 text-gray-600 mx-auto mb-4" />
+        <div className="bg-[#050505] border-2 border-gray-800 border-dashed rounded-xl p-12 text-center">
+          <Sparkles className="w-16 h-16 text-gray-400 mx-auto mb-4" />
           <h3 className="text-xl font-semibold text-gray-400 mb-2">
             Pronto para criar copies incríveis?
           </h3>
@@ -332,7 +332,7 @@ export function CopyIA() {
       )}
 
       {/* Tips */}
-      <div className="mt-8 bg-[#0d1410]/50 border border-gray-800 rounded-xl p-6">
+      <div className="mt-8 bg-[#050505]/50 border border-gray-800 rounded-xl p-6">
         <h3 className="text-lg font-bold text-[#ffffff] mb-4">💡 Dicas para melhores resultados:</h3>
         <ul className="space-y-2 text-gray-300">
           <li className="flex items-start gap-2">
