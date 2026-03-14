@@ -98,7 +98,7 @@ export function Suporte() {
             <input
               type="text"
               placeholder="Buscar por soluções, tutoriais, perguntas..."
-              className="w-full bg-[#0a0f0d] border border-gray-800 rounded-lg pl-12 pr-4 py-4 text-white placeholder-gray-500 focus:outline-none focus:border-[#ffffff]/50"
+              className="w-full bg-[#000000] border border-gray-800 rounded-lg pl-12 pr-4 py-4 text-white placeholder-gray-500 focus:outline-none focus:border-[#ffffff]/50"
             />
           </div>
           <p className="text-sm text-gray-400 mt-3">
@@ -118,7 +118,7 @@ export function Suporte() {
             return (
               <button
                 key={channel.title}
-                className={`bg-[#0d1410] border rounded-xl p-6 text-left transition-all ${channel.available
+                className={`bg-[#050505] border rounded-xl p-6 text-left transition-all ${channel.available
                     ? `border-gray-800 hover:border-${channel.color === 'green' ? '[#ffffff]' : channel.color + '-500'}/50 hover:bg-${channel.color === 'green' ? '[#ffffff]' : channel.color + '-500'}/5`
                     : "border-gray-800 opacity-50 cursor-not-allowed"
                   }`}
@@ -154,7 +154,7 @@ export function Suporte() {
           return (
             <button
               key={link.title}
-              className="bg-[#0d1410] border border-gray-800 rounded-xl p-5 hover:border-[#ffffff]/50 transition-all group text-left"
+              className="bg-[#050505] border border-gray-800 rounded-xl p-5 hover:border-[#ffffff]/50 transition-all group text-left"
             >
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-[#ffffff]/10 rounded-lg flex items-center justify-center group-hover:bg-[#ffffff]/20 transition-colors">
@@ -164,7 +164,7 @@ export function Suporte() {
                   <p className="text-white font-semibold mb-1">{link.title}</p>
                   <p className="text-gray-400 text-xs">{link.description}</p>
                 </div>
-                <ChevronRight className="w-5 h-5 text-gray-600 group-hover:text-[#ffffff] transition-colors" />
+                <ChevronRight className="w-5 h-5 text-gray-400 group-hover:text-[#ffffff] transition-colors" />
               </div>
             </button>
           );
@@ -176,7 +176,7 @@ export function Suporte() {
         <h2 className="text-xl font-bold text-white mb-4">Perguntas Frequentes</h2>
         <div className="space-y-4">
           {faqCategories.map((category) => (
-            <div key={category.title} className="bg-[#0d1410] border border-gray-800 rounded-xl overflow-hidden">
+            <div key={category.title} className="bg-[#050505] border border-gray-800 rounded-xl overflow-hidden">
               <div className="bg-gray-800/50 px-6 py-4 border-b border-gray-800">
                 <h3 className="text-lg font-bold text-white">{category.title}</h3>
               </div>
@@ -193,7 +193,7 @@ export function Suporte() {
                         </p>
                         <p className="text-xs text-gray-400">{item.views} visualizações</p>
                       </div>
-                      <ChevronRight className="w-5 h-5 text-gray-600 group-hover:text-[#ffffff] transition-colors" />
+                      <ChevronRight className="w-5 h-5 text-gray-400 group-hover:text-[#ffffff] transition-colors" />
                     </div>
                   </button>
                 ))}
@@ -204,7 +204,7 @@ export function Suporte() {
       </div>
 
       {/* Contact Form */}
-      <div className="bg-[#0d1410] border border-gray-800 rounded-xl p-6">
+      <div className="bg-[#050505] border border-gray-800 rounded-xl p-6">
         <h2 className="text-xl font-bold text-white mb-4">Não encontrou o que procura?</h2>
         <p className="text-gray-400 mb-6">Envie sua dúvida e nossa equipe retornará em breve</p>
 
@@ -230,7 +230,7 @@ export function Suporte() {
             ></textarea>
           </div>
 
-          <button className="bg-[#ffffff] hover:bg-[#ffffff] text-black px-6 py-3 rounded-lg font-semibold flex items-center gap-2 transition-all shadow-[0_0_20px_rgba(255,255,255,0.3)]">
+          <button className="bg-[#ffffff] hover:bg-[#ffffff] text-white px-6 py-3 rounded-lg font-semibold flex items-center gap-2 transition-all shadow-[0_0_20px_rgba(255,255,255,0.3)]">
             <Send className="w-5 h-5" />
             Enviar Mensagem
           </button>
