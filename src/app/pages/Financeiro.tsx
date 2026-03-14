@@ -111,7 +111,7 @@ export function Financeiro() {
           </h1>
           <p className="text-gray-400">Gerencie seus ganhos, saques e histórico financeiro</p>
         </div>
-        <button className="bg-[#ffffff] hover:bg-[#ffffff] text-black px-6 py-3 rounded-lg font-semibold flex items-center gap-2 transition-all shadow-[0_0_20px_rgba(255,255,255,0.3)]">
+        <button className="bg-[#ffffff] hover:bg-[#ffffff] text-white px-6 py-3 rounded-lg font-semibold flex items-center gap-2 transition-all shadow-[0_0_20px_rgba(255,255,255,0.3)]">
           <Wallet className="w-5 h-5" />
           Solicitar Saque
         </button>
@@ -138,7 +138,7 @@ export function Financeiro() {
         </div>
 
         {/* Pending Balance */}
-        <div className="bg-[#0d1410] border border-gray-800 rounded-xl p-6 hover:border-yellow-500/30 transition-all">
+        <div className="bg-[#050505] border border-gray-800 rounded-xl p-6 hover:border-yellow-500/30 transition-all">
           <div className="flex items-center justify-between mb-4">
             <div className="w-12 h-12 bg-yellow-500/10 rounded-lg flex items-center justify-center">
               <Clock className="w-6 h-6 text-yellow-400" />
@@ -153,7 +153,7 @@ export function Financeiro() {
         </div>
 
         {/* Withdrawn */}
-        <div className="bg-[#0d1410] border border-gray-800 rounded-xl p-6 hover:border-blue-500/30 transition-all">
+        <div className="bg-[#050505] border border-gray-800 rounded-xl p-6 hover:border-blue-500/30 transition-all">
           <div className="flex items-center justify-between mb-4">
             <div className="w-12 h-12 bg-blue-500/10 rounded-lg flex items-center justify-center">
               <ArrowDownRight className="w-6 h-6 text-blue-400" />
@@ -168,7 +168,7 @@ export function Financeiro() {
         </div>
 
         {/* Total Earnings */}
-        <div className="bg-[#0d1410] border border-gray-800 rounded-xl p-6 hover:border-purple-500/30 transition-all">
+        <div className="bg-[#050505] border border-gray-800 rounded-xl p-6 hover:border-purple-500/30 transition-all">
           <div className="flex items-center justify-between mb-4">
             <div className="w-12 h-12 bg-purple-500/10 rounded-lg flex items-center justify-center">
               <TrendingUp className="w-6 h-6 text-purple-400" />
@@ -185,7 +185,7 @@ export function Financeiro() {
 
       {/* Quick Actions */}
       <div className="grid grid-cols-3 gap-4">
-        <button className="bg-[#0d1410] border border-gray-800 rounded-xl p-5 hover:border-[#ffffff]/50 hover:bg-[#ffffff]/5 transition-all group text-left">
+        <button className="bg-[#050505] border border-gray-800 rounded-xl p-5 hover:border-[#ffffff]/50 hover:bg-[#ffffff]/5 transition-all group text-left">
           <div className="flex items-center gap-4">
             <div className="w-12 h-12 bg-[#ffffff]/10 rounded-lg flex items-center justify-center group-hover:bg-[#ffffff]/20 transition-colors">
               <Wallet className="w-6 h-6 text-[#ffffff]" />
@@ -194,11 +194,11 @@ export function Financeiro() {
               <p className="text-white font-semibold mb-1">Solicitar Saque</p>
               <p className="text-gray-400 text-xs">Via PIX ou Transferência</p>
             </div>
-            <ChevronRight className="w-5 h-5 text-gray-600 group-hover:text-[#ffffff] transition-colors" />
+            <ChevronRight className="w-5 h-5 text-gray-400 group-hover:text-[#ffffff] transition-colors" />
           </div>
         </button>
 
-        <button className="bg-[#0d1410] border border-gray-800 rounded-xl p-5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group text-left">
+        <button className="bg-[#050505] border border-gray-800 rounded-xl p-5 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group text-left">
           <div className="flex items-center gap-4">
             <div className="w-12 h-12 bg-blue-500/10 rounded-lg flex items-center justify-center group-hover:bg-blue-500/20 transition-colors">
               <CreditCard className="w-6 h-6 text-blue-400" />
@@ -207,11 +207,11 @@ export function Financeiro() {
               <p className="text-white font-semibold mb-1">Dados Bancários</p>
               <p className="text-gray-400 text-xs">Gerenciar contas cadastradas</p>
             </div>
-            <ChevronRight className="w-5 h-5 text-gray-600 group-hover:text-blue-400 transition-colors" />
+            <ChevronRight className="w-5 h-5 text-gray-400 group-hover:text-blue-400 transition-colors" />
           </div>
         </button>
 
-        <button className="bg-[#0d1410] border border-gray-800 rounded-xl p-5 hover:border-purple-500/50 hover:bg-purple-500/5 transition-all group text-left">
+        <button className="bg-[#050505] border border-gray-800 rounded-xl p-5 hover:border-purple-500/50 hover:bg-purple-500/5 transition-all group text-left">
           <div className="flex items-center gap-4">
             <div className="w-12 h-12 bg-purple-500/10 rounded-lg flex items-center justify-center group-hover:bg-purple-500/20 transition-colors">
               <Download className="w-6 h-6 text-purple-400" />
@@ -220,13 +220,13 @@ export function Financeiro() {
               <p className="text-white font-semibold mb-1">Relatórios</p>
               <p className="text-gray-400 text-xs">Exportar histórico financeiro</p>
             </div>
-            <ChevronRight className="w-5 h-5 text-gray-600 group-hover:text-purple-400 transition-colors" />
+            <ChevronRight className="w-5 h-5 text-gray-400 group-hover:text-purple-400 transition-colors" />
           </div>
         </button>
       </div>
 
       {/* Transactions */}
-      <div className="bg-[#0d1410] border border-gray-800 rounded-xl overflow-hidden">
+      <div className="bg-[#050505] border border-gray-800 rounded-xl overflow-hidden">
         <div className="border-b border-gray-800 p-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
