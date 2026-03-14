@@ -167,8 +167,8 @@ export function AdminDashboard() {
     <div className="space-y-6">
       {/* Page Title */}
       <div>
-        <h1 className="text-2xl font-bold text-gray-900">Dashboard</h1>
-        <p className="text-sm text-gray-600 mt-1">Visão geral do sistema</p>
+        <h1 className="text-2xl font-bold text-white">Dashboard</h1>
+        <p className="text-sm text-gray-400 mt-1">Visão geral do sistema</p>
       </div>
 
       {/* Stats Cards */}
@@ -179,12 +179,12 @@ export function AdminDashboard() {
           return (
             <div
               key={index}
-              className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow"
+              className="bg-[#121214] rounded-xl shadow-sm border border-[#27272a] p-6 hover:shadow-md transition-shadow"
             >
               <div className="flex items-start justify-between">
                 <div className="flex-1">
-                  <p className="text-sm font-medium text-gray-600">{card.title}</p>
-                  <p className="text-3xl font-bold text-gray-900 mt-2">{card.value}</p>
+                  <p className="text-sm font-medium text-gray-400">{card.title}</p>
+                  <p className="text-3xl font-bold text-white mt-2">{card.value}</p>
                   <div className="flex items-center gap-1 mt-2">
                     <TrendIcon
                       className={`w-4 h-4 ${
@@ -215,10 +215,10 @@ export function AdminDashboard() {
       {/* Charts Section */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* User Growth Chart */}
-        <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+        <div className="bg-[#121214] rounded-xl shadow-sm border border-[#27272a] p-6">
           <div className="mb-4">
-            <h2 className="text-lg font-bold text-gray-900">Crescimento de Usuários</h2>
-            <p className="text-sm text-gray-600">Últimos 6 meses</p>
+            <h2 className="text-lg font-bold text-white">Crescimento de Usuários</h2>
+            <p className="text-sm text-gray-400">Últimos 6 meses</p>
           </div>
           <ResponsiveContainer width="100%" height={250}>
             <AreaChart data={userGrowthData}>
@@ -251,10 +251,10 @@ export function AdminDashboard() {
         </div>
 
         {/* Revenue Chart */}
-        <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+        <div className="bg-[#121214] rounded-xl shadow-sm border border-[#27272a] p-6">
           <div className="mb-4">
-            <h2 className="text-lg font-bold text-gray-900">Receita Mensal</h2>
-            <p className="text-sm text-gray-600">Últimos 6 meses</p>
+            <h2 className="text-lg font-bold text-white">Receita Mensal</h2>
+            <p className="text-sm text-gray-400">Últimos 6 meses</p>
           </div>
           <ResponsiveContainer width="100%" height={250}>
             <BarChart data={revenueData}>
@@ -278,10 +278,10 @@ export function AdminDashboard() {
       </div>
 
       {/* Activity Chart - Full Width */}
-      <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+      <div className="bg-[#121214] rounded-xl shadow-sm border border-[#27272a] p-6">
         <div className="mb-4">
-          <h2 className="text-lg font-bold text-gray-900">Atividade Semanal</h2>
-          <p className="text-sm text-gray-600">Usuários ativos por dia</p>
+          <h2 className="text-lg font-bold text-white">Atividade Semanal</h2>
+          <p className="text-sm text-gray-400">Usuários ativos por dia</p>
         </div>
         <ResponsiveContainer width="100%" height={250}>
           <LineChart data={activityData}>
@@ -308,37 +308,37 @@ export function AdminDashboard() {
       </div>
 
       {/* Users Table */}
-      <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
-        <div className="p-6 border-b border-gray-200">
-          <h2 className="text-lg font-bold text-gray-900">Usuários Recentes</h2>
-          <p className="text-sm text-gray-600">Gerencie os usuários do sistema</p>
+      <div className="bg-[#121214] rounded-xl shadow-sm border border-[#27272a] overflow-hidden">
+        <div className="p-6 border-b border-[#27272a]">
+          <h2 className="text-lg font-bold text-white">Usuários Recentes</h2>
+          <p className="text-sm text-gray-400">Gerencie os usuários do sistema</p>
         </div>
         <div className="overflow-x-auto">
           <table className="w-full">
-            <thead className="bg-gray-50 border-b border-gray-200">
+            <thead className="bg-[#0a0a0c] border-b border-[#27272a]">
               <tr>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                <th className="px-6 py-3 text-left text-xs font-semibold text-gray-400 uppercase tracking-wider">
                   Nome
                 </th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                <th className="px-6 py-3 text-left text-xs font-semibold text-gray-400 uppercase tracking-wider">
                   Email
                 </th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                <th className="px-6 py-3 text-left text-xs font-semibold text-gray-400 uppercase tracking-wider">
                   Status
                 </th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                <th className="px-6 py-3 text-left text-xs font-semibold text-gray-400 uppercase tracking-wider">
                   Plano
                 </th>
-                <th className="px-6 py-3 text-right text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                <th className="px-6 py-3 text-right text-xs font-semibold text-gray-400 uppercase tracking-wider">
                   Ações
                 </th>
               </tr>
             </thead>
-            <tbody className="bg-white divide-y divide-gray-200">
+            <tbody className="bg-[#121214] divide-y divide-gray-200">
               {usersData.map((user) => (
                 <tr
                   key={user.id}
-                  className="hover:bg-gray-50 transition-colors"
+                  className="hover:bg-[#0a0a0c] transition-colors"
                 >
                   <td className="px-6 py-4 whitespace-nowrap">
                     <div className="flex items-center gap-3">
@@ -349,13 +349,13 @@ export function AdminDashboard() {
                           {user.avatar}
                         </span>
                       </div>
-                      <span className="text-sm font-medium text-gray-900">
+                      <span className="text-sm font-medium text-white">
                         {user.name}
                       </span>
                     </div>
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap">
-                    <span className="text-sm text-gray-600">{user.email}</span>
+                    <span className="text-sm text-gray-400">{user.email}</span>
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap">
                     <span
@@ -363,7 +363,7 @@ export function AdminDashboard() {
                         user.status === "Ativo"
                           ? "bg-green-100 text-green-800"
                           : user.status === "Inativo"
-                          ? "bg-gray-100 text-gray-800"
+                          ? "bg-[#1a1a1f] text-gray-100"
                           : "bg-yellow-100 text-yellow-800"
                       }`}
                     >
@@ -377,7 +377,7 @@ export function AdminDashboard() {
                           ? "bg-purple-100 text-purple-800"
                           : user.plan === "Pro"
                           ? "bg-blue-100 text-blue-800"
-                          : "bg-gray-100 text-gray-800"
+                          : "bg-[#1a1a1f] text-gray-100"
                       }`}
                     >
                       {user.plan}
@@ -413,17 +413,17 @@ export function AdminDashboard() {
             </tbody>
           </table>
         </div>
-        <div className="px-6 py-4 border-t border-gray-200 bg-gray-50">
+        <div className="px-6 py-4 border-t border-[#27272a] bg-[#0a0a0c]">
           <div className="flex items-center justify-between">
-            <p className="text-sm text-gray-600">
+            <p className="text-sm text-gray-400">
               Mostrando <span className="font-medium">1-6</span> de{" "}
               <span className="font-medium">1,234</span> usuários
             </p>
             <div className="flex gap-2">
-              <button className="px-3 py-1 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed">
+              <button className="px-3 py-1 text-sm font-medium text-gray-300 bg-[#121214] border border-[#3f3f46] rounded-lg hover:bg-[#0a0a0c] disabled:opacity-50 disabled:cursor-not-allowed">
                 Anterior
               </button>
-              <button className="px-3 py-1 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-50">
+              <button className="px-3 py-1 text-sm font-medium text-gray-300 bg-[#121214] border border-[#3f3f46] rounded-lg hover:bg-[#0a0a0c]">
                 Próximo
               </button>
             </div>
