@@ -150,7 +150,7 @@ export function Produtos() {
     switch (popularity) {
       case "high":
         return (
-          <span className="px-2 py-1 text-xs font-medium bg-white/10 text-white border border-white/30 rounded">
+          <span className="px-2 py-1 text-xs font-medium bg-[#121214]/10 text-white border border-white/30 rounded">
             🔥 Alta
           </span>
         );
@@ -162,7 +162,7 @@ export function Produtos() {
         );
       case "low":
         return (
-          <span className="px-2 py-1 text-xs font-medium bg-gray-500/10 text-gray-400 border border-gray-500/30 rounded">
+          <span className="px-2 py-1 text-xs font-medium bg-[#0a0a0c]0/10 text-gray-400 border border-gray-500/30 rounded">
             📊 Baixa
           </span>
         );
@@ -174,7 +174,7 @@ export function Produtos() {
       {/* Header */}
       <div className="flex items-center gap-3 mb-8">
         <div className="w-12 h-12 bg-gradient-to-br from-[#ffffff] to-[#ffffff] rounded-xl flex items-center justify-center">
-          <Package className="w-6 h-6 text-black" />
+          <Package className="w-6 h-6 text-white" />
         </div>
         <div>
           <h1 className="text-3xl font-bold text-white">Produtos</h1>
@@ -193,7 +193,7 @@ export function Produtos() {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Pesquisar produtos..."
-            className="w-full bg-[#0d1410] border border-gray-800 rounded-lg pl-10 pr-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-[#ffffff]"
+            className="w-full bg-[#050505] border border-gray-800 rounded-lg pl-10 pr-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-[#ffffff]"
           />
         </div>
       </div>
@@ -201,7 +201,7 @@ export function Produtos() {
       <div className="flex gap-6">
         {/* Filters Sidebar */}
         <aside className="w-64 flex-shrink-0">
-          <div className="bg-[#0d1410] border-2 border-[#ffffff]/30 rounded-xl p-6 shadow-[0_0_20px_rgba(255,255,255,0.1)] sticky top-6">
+          <div className="bg-[#050505] border-2 border-[#ffffff]/30 rounded-xl p-6 shadow-[0_0_20px_rgba(255,255,255,0.1)] sticky top-6">
             <h2 className="text-lg font-bold text-white mb-6 flex items-center gap-2">
               <TrendingUp className="w-5 h-5 text-[#ffffff]" />
               Filtros
@@ -219,7 +219,7 @@ export function Produtos() {
                     onClick={() => setSelectedCategory(category)}
                     className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors ${
                       selectedCategory === category
-                        ? "bg-[#ffffff] text-black font-medium"
+                        ? "bg-[#ffffff] text-white font-medium"
                         : "text-gray-400 hover:text-white hover:bg-gray-800/50"
                     }`}
                   >
@@ -241,7 +241,7 @@ export function Produtos() {
                     onClick={() => setSelectedCommission(range)}
                     className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors ${
                       selectedCommission === range
-                        ? "bg-[#ffffff] text-black font-medium"
+                        ? "bg-[#ffffff] text-white font-medium"
                         : "text-gray-400 hover:text-white hover:bg-gray-800/50"
                     }`}
                   >
@@ -263,7 +263,7 @@ export function Produtos() {
                     onClick={() => setSelectedPopularity(option)}
                     className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors ${
                       selectedPopularity === option
-                        ? "bg-[#ffffff] text-black font-medium"
+                        ? "bg-[#ffffff] text-white font-medium"
                         : "text-gray-400 hover:text-white hover:bg-gray-800/50"
                     }`}
                   >
@@ -301,7 +301,7 @@ export function Produtos() {
               {filteredProducts.map((product) => (
                 <div
                   key={product.id}
-                  className="bg-[#0d1410] border-2 border-gray-800 rounded-xl overflow-hidden hover:border-[#ffffff]/50 transition-all shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] group"
+                  className="bg-[#050505] border-2 border-gray-800 rounded-xl overflow-hidden hover:border-[#ffffff]/50 transition-all shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] group"
                 >
                   {/* Product Image */}
                   <div className="relative h-48 overflow-hidden bg-gray-900">
@@ -352,7 +352,7 @@ export function Produtos() {
                     </div>
 
                     {/* Earnings Estimation */}
-                    <div className="bg-[#0a0f0d] rounded-lg p-3 mb-4">
+                    <div className="bg-[#000000] rounded-lg p-3 mb-4">
                       <p className="text-xs text-gray-400 mb-1">
                         Você ganha por venda:
                       </p>
@@ -365,7 +365,7 @@ export function Produtos() {
                     </div>
 
                     {/* Promote Button */}
-                    <button className="w-full px-4 py-3 bg-[#ffffff] text-black font-semibold rounded-lg hover:bg-[#ffffff] transition-colors shadow-[0_0_15px_rgba(255,255,255,0.3)] hover:shadow-[0_0_25px_rgba(255,255,255,0.5)]">
+                    <button className="w-full px-4 py-3 bg-[#ffffff] text-white font-semibold rounded-lg hover:bg-[#ffffff] transition-colors shadow-[0_0_15px_rgba(255,255,255,0.3)] hover:shadow-[0_0_25px_rgba(255,255,255,0.5)]">
                       Promover
                     </button>
                   </div>
@@ -373,8 +373,8 @@ export function Produtos() {
               ))}
             </div>
           ) : (
-            <div className="bg-[#0d1410] border-2 border-gray-800 border-dashed rounded-xl p-12 text-center">
-              <Package className="w-16 h-16 text-gray-600 mx-auto mb-4" />
+            <div className="bg-[#050505] border-2 border-gray-800 border-dashed rounded-xl p-12 text-center">
+              <Package className="w-16 h-16 text-gray-400 mx-auto mb-4" />
               <h3 className="text-xl font-semibold text-gray-400 mb-2">
                 Nenhum produto encontrado
               </h3>
