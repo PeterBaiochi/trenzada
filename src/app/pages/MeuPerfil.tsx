@@ -108,7 +108,7 @@ export function MeuPerfil() {
     switch (status) {
       case "success":
         return (
-          <span className="px-2 py-1 text-xs font-medium bg-white/10 text-white border border-white/30 rounded">
+          <span className="px-2 py-1 text-xs font-medium bg-[#121214]/10 text-white border border-white/30 rounded">
             Concluído
           </span>
         );
@@ -134,7 +134,7 @@ export function MeuPerfil() {
       {/* Header */}
       <div className="flex items-center gap-3 mb-8">
         <div className="w-12 h-12 bg-gradient-to-br from-[#ffffff] to-[#ffffff] rounded-xl flex items-center justify-center">
-          <User className="w-6 h-6 text-black" />
+          <User className="w-6 h-6 text-white" />
         </div>
         <div>
           <h1 className="text-3xl font-bold text-white">Meu Perfil</h1>
@@ -148,15 +148,15 @@ export function MeuPerfil() {
         {/* Left Column */}
         <div className="space-y-6">
           {/* Profile Card */}
-          <div className="bg-[#0d1410] border-2 border-[#ffffff]/30 rounded-xl shadow-[0_0_20px_rgba(255,255,255,0.15)] p-6">
+          <div className="bg-[#050505] border-2 border-[#ffffff]/30 rounded-xl shadow-[0_0_20px_rgba(255,255,255,0.15)] p-6">
             <div className="flex flex-col items-center text-center">
               {/* Profile Photo */}
               <div className="relative mb-4">
-                <div className="w-32 h-32 bg-gradient-to-br from-[#ffffff] to-[#ffffff] rounded-full flex items-center justify-center text-black text-4xl font-bold">
+                <div className="w-32 h-32 bg-gradient-to-br from-[#ffffff] to-[#ffffff] rounded-full flex items-center justify-center text-white text-4xl font-bold">
                   GB
                 </div>
                 <button className="absolute bottom-0 right-0 w-10 h-10 bg-[#ffffff] rounded-full flex items-center justify-center hover:bg-[#ffffff] transition-colors shadow-lg">
-                  <Edit className="w-5 h-5 text-black" />
+                  <Edit className="w-5 h-5 text-white" />
                 </button>
               </div>
 
@@ -184,14 +184,14 @@ export function MeuPerfil() {
           </div>
 
           {/* Stats Cards */}
-          <div className="bg-[#0d1410] border-2 border-[#ffffff]/30 rounded-xl shadow-[0_0_20px_rgba(255,255,255,0.15)] p-6">
+          <div className="bg-[#050505] border-2 border-[#ffffff]/30 rounded-xl shadow-[0_0_20px_rgba(255,255,255,0.15)] p-6">
             <h3 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
               <Trophy className="w-5 h-5 text-[#ffffff]" />
               Ranking Atual
             </h3>
 
             <div className="space-y-4">
-              <div className="text-center p-4 bg-[#0a0f0d] rounded-lg">
+              <div className="text-center p-4 bg-[#000000] rounded-lg">
                 <p className="text-sm text-gray-400 mb-1">Posição</p>
                 <p className="text-4xl font-bold text-[#ffffff]">
                   {profileData.ranking}
@@ -199,7 +199,7 @@ export function MeuPerfil() {
                 <p className="text-xs text-gray-500 mt-1">de 10.000 afiliados</p>
               </div>
 
-              <div className="p-4 bg-[#0a0f0d] rounded-lg">
+              <div className="p-4 bg-[#000000] rounded-lg">
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-sm text-gray-400">Ganhos Totais</span>
                   <span className="text-lg font-bold text-white">
@@ -220,7 +220,7 @@ export function MeuPerfil() {
         {/* Right Column */}
         <div className="lg:col-span-2 space-y-6">
           {/* Personal Data */}
-          <div className="bg-[#0d1410] border-2 border-gray-800 rounded-xl p-6">
+          <div className="bg-[#050505] border-2 border-gray-800 rounded-xl p-6">
             <div className="flex items-center justify-between mb-6">
               <h3 className="text-lg font-bold text-white flex items-center gap-2">
                 <User className="w-5 h-5 text-[#ffffff]" />
@@ -253,7 +253,7 @@ export function MeuPerfil() {
                   type="text"
                   defaultValue={profileData.name}
                   disabled={!isEditingPersonal}
-                  className="w-full bg-[#0a0f0d] border border-gray-700 rounded-lg px-4 py-2 text-white disabled:opacity-50 focus:outline-none focus:border-[#ffffff]"
+                  className="w-full bg-[#000000] border border-gray-700 rounded-lg px-4 py-2 text-white disabled:opacity-50 focus:outline-none focus:border-[#ffffff]"
                 />
               </div>
               <div>
@@ -264,7 +264,7 @@ export function MeuPerfil() {
                   type="email"
                   defaultValue={profileData.email}
                   disabled={!isEditingPersonal}
-                  className="w-full bg-[#0a0f0d] border border-gray-700 rounded-lg px-4 py-2 text-white disabled:opacity-50 focus:outline-none focus:border-[#ffffff]"
+                  className="w-full bg-[#000000] border border-gray-700 rounded-lg px-4 py-2 text-white disabled:opacity-50 focus:outline-none focus:border-[#ffffff]"
                 />
               </div>
               <div>
@@ -275,7 +275,7 @@ export function MeuPerfil() {
                   type="tel"
                   defaultValue={profileData.phone}
                   disabled={!isEditingPersonal}
-                  className="w-full bg-[#0a0f0d] border border-gray-700 rounded-lg px-4 py-2 text-white disabled:opacity-50 focus:outline-none focus:border-[#ffffff]"
+                  className="w-full bg-[#000000] border border-gray-700 rounded-lg px-4 py-2 text-white disabled:opacity-50 focus:outline-none focus:border-[#ffffff]"
                 />
               </div>
 
@@ -291,8 +291,8 @@ export function MeuPerfil() {
                     disabled={!isEditingPersonal}
                     className={`flex-1 px-4 py-2 rounded-lg font-medium transition-all disabled:opacity-50 ${
                       documentType === "cpf"
-                        ? "bg-[#ffffff] text-black"
-                        : "bg-[#0a0f0d] text-gray-400 border border-gray-700 hover:border-[#ffffff]"
+                        ? "bg-[#ffffff] text-white"
+                        : "bg-[#000000] text-gray-400 border border-gray-700 hover:border-[#ffffff]"
                     }`}
                   >
                     CPF
@@ -303,8 +303,8 @@ export function MeuPerfil() {
                     disabled={!isEditingPersonal}
                     className={`flex-1 px-4 py-2 rounded-lg font-medium transition-all disabled:opacity-50 ${
                       documentType === "cnpj"
-                        ? "bg-[#ffffff] text-black"
-                        : "bg-[#0a0f0d] text-gray-400 border border-gray-700 hover:border-[#ffffff]"
+                        ? "bg-[#ffffff] text-white"
+                        : "bg-[#000000] text-gray-400 border border-gray-700 hover:border-[#ffffff]"
                     }`}
                   >
                     CNPJ
@@ -319,7 +319,7 @@ export function MeuPerfil() {
                     type="text"
                     defaultValue={profileData.cpf}
                     disabled={!isEditingPersonal}
-                    className="w-full bg-[#0a0f0d] border border-gray-700 rounded-lg px-4 py-2 text-white disabled:opacity-50 focus:outline-none focus:border-[#ffffff]"
+                    className="w-full bg-[#000000] border border-gray-700 rounded-lg px-4 py-2 text-white disabled:opacity-50 focus:outline-none focus:border-[#ffffff]"
                   />
                 </div>
               ) : (
@@ -329,7 +329,7 @@ export function MeuPerfil() {
                     type="text"
                     defaultValue={profileData.cnpj}
                     disabled={!isEditingPersonal}
-                    className="w-full bg-[#0a0f0d] border border-gray-700 rounded-lg px-4 py-2 text-white disabled:opacity-50 focus:outline-none focus:border-[#ffffff]"
+                    className="w-full bg-[#000000] border border-gray-700 rounded-lg px-4 py-2 text-white disabled:opacity-50 focus:outline-none focus:border-[#ffffff]"
                   />
                 </div>
               )}
@@ -342,7 +342,7 @@ export function MeuPerfil() {
                   type="text"
                   defaultValue={profileData.birthDate}
                   disabled={!isEditingPersonal}
-                  className="w-full bg-[#0a0f0d] border border-gray-700 rounded-lg px-4 py-2 text-white disabled:opacity-50 focus:outline-none focus:border-[#ffffff]"
+                  className="w-full bg-[#000000] border border-gray-700 rounded-lg px-4 py-2 text-white disabled:opacity-50 focus:outline-none focus:border-[#ffffff]"
                 />
               </div>
               <div>
@@ -353,14 +353,14 @@ export function MeuPerfil() {
                   type="text"
                   defaultValue={profileData.address}
                   disabled={!isEditingPersonal}
-                  className="w-full bg-[#0a0f0d] border border-gray-700 rounded-lg px-4 py-2 text-white disabled:opacity-50 focus:outline-none focus:border-[#ffffff]"
+                  className="w-full bg-[#000000] border border-gray-700 rounded-lg px-4 py-2 text-white disabled:opacity-50 focus:outline-none focus:border-[#ffffff]"
                 />
               </div>
             </div>
           </div>
 
           {/* Bank Data */}
-          <div className="bg-[#0d1410] border-2 border-gray-800 rounded-xl p-6">
+          <div className="bg-[#050505] border-2 border-gray-800 rounded-xl p-6">
             <div className="flex items-center justify-between mb-6">
               <h3 className="text-lg font-bold text-white flex items-center gap-2">
                 <CreditCard className="w-5 h-5 text-[#ffffff]" />
@@ -393,7 +393,7 @@ export function MeuPerfil() {
                 defaultValue={pixData.pixKey}
                 disabled={!isEditingPix}
                 placeholder="Email, CPF, CNPJ ou telefone"
-                className="w-full bg-[#0a0f0d] border border-gray-700 rounded-lg px-4 py-2 text-white disabled:opacity-50 focus:outline-none focus:border-[#ffffff]"
+                className="w-full bg-[#000000] border border-gray-700 rounded-lg px-4 py-2 text-white disabled:opacity-50 focus:outline-none focus:border-[#ffffff]"
               />
               <p className="text-xs text-gray-500 mt-2">
                 💡 Esta será a chave PIX usada para receber seus pagamentos e comissões
@@ -402,7 +402,7 @@ export function MeuPerfil() {
           </div>
 
           {/* Security */}
-          <div className="bg-[#0d1410] border-2 border-gray-800 rounded-xl p-6">
+          <div className="bg-[#050505] border-2 border-gray-800 rounded-xl p-6">
             <h3 className="text-lg font-bold text-white mb-6 flex items-center gap-2">
               <Shield className="w-5 h-5 text-[#ffffff]" />
               Segurança
@@ -418,7 +418,7 @@ export function MeuPerfil() {
                   <input
                     type={showPassword ? "text" : "password"}
                     placeholder="Digite sua nova senha"
-                    className="w-full bg-[#0a0f0d] border border-gray-700 rounded-lg px-4 py-2 pr-12 text-white focus:outline-none focus:border-[#ffffff]"
+                    className="w-full bg-[#000000] border border-gray-700 rounded-lg px-4 py-2 pr-12 text-white focus:outline-none focus:border-[#ffffff]"
                   />
                   <button
                     onClick={() => setShowPassword(!showPassword)}
@@ -440,7 +440,7 @@ export function MeuPerfil() {
                 <input
                   type={showPassword ? "text" : "password"}
                   placeholder="Confirme sua nova senha"
-                  className="w-full bg-[#0a0f0d] border border-gray-700 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-[#ffffff]"
+                  className="w-full bg-[#000000] border border-gray-700 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-[#ffffff]"
                 />
               </div>
 
@@ -450,7 +450,7 @@ export function MeuPerfil() {
 
               <div className="border-t border-gray-800 pt-4 mt-4">
                 {/* 2FA */}
-                <div className="flex items-center justify-between p-4 bg-[#0a0f0d] rounded-lg">
+                <div className="flex items-center justify-between p-4 bg-[#000000] rounded-lg">
                   <div className="flex items-center gap-3">
                     <Lock className="w-5 h-5 text-[#ffffff]" />
                     <div>
@@ -469,7 +469,7 @@ export function MeuPerfil() {
                       onChange={() => setTwoFactorEnabled(!twoFactorEnabled)}
                       className="sr-only peer"
                     />
-                    <div className="w-11 h-6 bg-gray-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#ffffff]"></div>
+                    <div className="w-11 h-6 bg-gray-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-[#121214] after:border-[#3f3f46] after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#ffffff]"></div>
                   </label>
                 </div>
               </div>
@@ -477,7 +477,7 @@ export function MeuPerfil() {
           </div>
 
           {/* Activity History */}
-          <div className="bg-[#0d1410] border-2 border-gray-800 rounded-xl p-6">
+          <div className="bg-[#050505] border-2 border-gray-800 rounded-xl p-6">
             <h3 className="text-lg font-bold text-white mb-6 flex items-center gap-2">
               <Clock className="w-5 h-5 text-[#ffffff]" />
               Histórico de Atividades
@@ -487,7 +487,7 @@ export function MeuPerfil() {
               {activities.map((activity) => (
                 <div
                   key={activity.id}
-                  className="flex items-start gap-4 p-4 bg-[#0a0f0d] rounded-lg hover:bg-[#0a0f0d]/70 transition-colors"
+                  className="flex items-start gap-4 p-4 bg-[#000000] rounded-lg hover:bg-[#000000]/70 transition-colors"
                 >
                   <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center flex-shrink-0">
                     {getActivityIcon(activity.type)}
