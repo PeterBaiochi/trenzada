@@ -78,7 +78,7 @@ export function RankingGeral() {
       <div className="bg-gradient-to-br from-[#ffffff]/10 to-[#ffffff]/5 border border-[#ffffff]/30 rounded-xl p-6 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-64 h-64 bg-[#ffffff]/5 rounded-full blur-3xl"></div>
         <div className="relative flex items-center gap-6">
-          <div className="w-20 h-20 bg-gradient-to-br from-[#ffffff] to-[#ffffff] rounded-xl flex items-center justify-center text-black text-2xl font-bold shadow-[0_0_30px_rgba(255,255,255,0.3)]">
+          <div className="w-20 h-20 bg-gradient-to-br from-[#ffffff] to-[#ffffff] rounded-xl flex items-center justify-center text-white text-2xl font-bold shadow-[0_0_30px_rgba(255,255,255,0.3)]">
             {currentUser.position}
           </div>
           <div className="flex-1">
@@ -112,7 +112,7 @@ export function RankingGeral() {
             </div>
           </div>
           <div className="text-right">
-            <button className="bg-[#ffffff] hover:bg-[#ffffff] text-black px-6 py-3 rounded-lg font-semibold transition-all shadow-[0_0_20px_rgba(255,255,255,0.3)]">
+            <button className="bg-[#ffffff] hover:bg-[#ffffff] text-white px-6 py-3 rounded-lg font-semibold transition-all shadow-[0_0_20px_rgba(255,255,255,0.3)]">
               Ver Detalhes
             </button>
           </div>
@@ -121,7 +121,7 @@ export function RankingGeral() {
 
       {/* Stats Cards */}
       <div className="grid grid-cols-4 gap-4">
-        <div className="bg-[#0d1410] border border-gray-800 rounded-xl p-6">
+        <div className="bg-[#050505] border border-gray-800 rounded-xl p-6">
           <div className="flex items-center gap-3 mb-2">
             <div className="w-10 h-10 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(251,191,36,0.3)]">
               <Crown className="w-5 h-5 text-white" />
@@ -134,7 +134,7 @@ export function RankingGeral() {
           <p className="text-xs text-gray-500">1.523 vendas</p>
         </div>
 
-        <div className="bg-[#0d1410] border border-gray-800 rounded-xl p-6">
+        <div className="bg-[#050505] border border-gray-800 rounded-xl p-6">
           <div className="flex items-center gap-3 mb-2">
             <div className="w-10 h-10 bg-[#ffffff]/10 rounded-lg flex items-center justify-center">
               <Target className="w-5 h-5 text-[#ffffff]" />
@@ -147,7 +147,7 @@ export function RankingGeral() {
           <p className="text-xs text-gray-500">Faltam 17 posições</p>
         </div>
 
-        <div className="bg-[#0d1410] border border-gray-800 rounded-xl p-6">
+        <div className="bg-[#050505] border border-gray-800 rounded-xl p-6">
           <div className="flex items-center gap-3 mb-2">
             <div className="w-10 h-10 bg-blue-500/10 rounded-lg flex items-center justify-center">
               <TrendingUp className="w-5 h-5 text-blue-400" />
@@ -160,7 +160,7 @@ export function RankingGeral() {
           <p className="text-xs text-gray-500">Últimos 7 dias</p>
         </div>
 
-        <div className="bg-[#0d1410] border border-gray-800 rounded-xl p-6">
+        <div className="bg-[#050505] border border-gray-800 rounded-xl p-6">
           <div className="flex items-center gap-3 mb-2">
             <div className="w-10 h-10 bg-purple-500/10 rounded-lg flex items-center justify-center">
               <Zap className="w-5 h-5 text-purple-400" />
@@ -175,7 +175,7 @@ export function RankingGeral() {
       </div>
 
       {/* Top 10 Ranking */}
-      <div className="bg-[#0d1410] border border-gray-800 rounded-xl overflow-hidden">
+      <div className="bg-[#050505] border border-gray-800 rounded-xl overflow-hidden">
         <div className="border-b border-gray-800 p-6">
           <div className="flex items-center gap-3">
             <Trophy className="w-6 h-6 text-[#ffffff]" />
@@ -208,7 +208,7 @@ export function RankingGeral() {
 
                   {/* Avatar */}
                   <div className="w-12 h-12 bg-gradient-to-br from-[#ffffff] to-[#ffffff] rounded-lg flex items-center justify-center">
-                    <span className="text-black text-sm font-bold">{affiliate.avatar}</span>
+                    <span className="text-white text-sm font-bold">{affiliate.avatar}</span>
                   </div>
                 </div>
 
