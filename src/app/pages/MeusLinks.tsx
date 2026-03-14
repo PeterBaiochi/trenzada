@@ -88,7 +88,7 @@ export function MeusLinks() {
           </h1>
           <p className="text-gray-400">Gerencie e monitore todos os seus links de afiliado</p>
         </div>
-        <button className="bg-[#ffffff] hover:bg-[#ffffff] text-black px-6 py-3 rounded-lg font-semibold flex items-center gap-2 transition-all shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.5)]">
+        <button className="bg-[#ffffff] hover:bg-[#ffffff] text-white px-6 py-3 rounded-lg font-semibold flex items-center gap-2 transition-all shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.5)]">
           <Plus className="w-5 h-5" />
           Criar Novo Link
         </button>
@@ -96,7 +96,7 @@ export function MeusLinks() {
 
       {/* Stats Overview */}
       <div className="grid grid-cols-4 gap-4">
-        <div className="bg-[#0d1410] border border-gray-800 rounded-xl p-6 hover:border-[#ffffff]/30 transition-all">
+        <div className="bg-[#050505] border border-gray-800 rounded-xl p-6 hover:border-[#ffffff]/30 transition-all">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-12 h-12 bg-[#ffffff]/10 rounded-lg flex items-center justify-center">
               <Link2 className="w-6 h-6 text-[#ffffff]" />
@@ -108,7 +108,7 @@ export function MeusLinks() {
           </div>
         </div>
 
-        <div className="bg-[#0d1410] border border-gray-800 rounded-xl p-6 hover:border-blue-500/30 transition-all">
+        <div className="bg-[#050505] border border-gray-800 rounded-xl p-6 hover:border-blue-500/30 transition-all">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-12 h-12 bg-blue-500/10 rounded-lg flex items-center justify-center">
               <MousePointer className="w-6 h-6 text-blue-400" />
@@ -120,7 +120,7 @@ export function MeusLinks() {
           </div>
         </div>
 
-        <div className="bg-[#0d1410] border border-gray-800 rounded-xl p-6 hover:border-purple-500/30 transition-all">
+        <div className="bg-[#050505] border border-gray-800 rounded-xl p-6 hover:border-purple-500/30 transition-all">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-12 h-12 bg-purple-500/10 rounded-lg flex items-center justify-center">
               <TrendingUp className="w-6 h-6 text-purple-400" />
@@ -152,21 +152,21 @@ export function MeusLinks() {
           <input
             type="text"
             placeholder="Buscar links..."
-            className="w-full bg-[#0d1410] border border-gray-800 rounded-lg pl-10 pr-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-[#ffffff]/50"
+            className="w-full bg-[#050505] border border-gray-800 rounded-lg pl-10 pr-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-[#ffffff]/50"
           />
         </div>
-        <button className="bg-[#0d1410] border border-gray-800 rounded-lg px-4 py-3 text-gray-400 hover:text-white hover:border-gray-700 transition-all flex items-center gap-2">
+        <button className="bg-[#050505] border border-gray-800 rounded-lg px-4 py-3 text-gray-400 hover:text-white hover:border-gray-700 transition-all flex items-center gap-2">
           <Filter className="w-5 h-5" />
           Filtros
         </button>
-        <button className="bg-[#0d1410] border border-gray-800 rounded-lg px-4 py-3 text-gray-400 hover:text-white hover:border-gray-700 transition-all flex items-center gap-2">
+        <button className="bg-[#050505] border border-gray-800 rounded-lg px-4 py-3 text-gray-400 hover:text-white hover:border-gray-700 transition-all flex items-center gap-2">
           <Download className="w-5 h-5" />
           Exportar
         </button>
       </div>
 
       {/* Links Table */}
-      <div className="bg-[#0d1410] border border-gray-800 rounded-xl overflow-hidden">
+      <div className="bg-[#050505] border border-gray-800 rounded-xl overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full">
             <thead className="bg-gray-800/50 border-b border-gray-800">
@@ -228,7 +228,7 @@ export function MeusLinks() {
                         Ativo
                       </span>
                     ) : (
-                      <span className="inline-flex items-center gap-1.5 bg-gray-500/10 text-gray-400 px-3 py-1 rounded-full text-xs font-semibold border border-gray-500/30">
+                      <span className="inline-flex items-center gap-1.5 bg-[#0a0a0c]0/10 text-gray-400 px-3 py-1 rounded-full text-xs font-semibold border border-gray-500/30">
                         <div className="w-1.5 h-1.5 bg-gray-400 rounded-full"></div>
                         Pausado
                       </span>
