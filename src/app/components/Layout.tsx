@@ -63,16 +63,16 @@ export function Layout() {
   const currentProgress = Math.round((currentSales / requiredSales) * 100); // Percentage
 
   return (
-    <div className="flex h-screen bg-[#0a0f0d]">
+    <div className="flex min-h-screen bg-[#000000]">
       {/* Sidebar */}
-      <aside className="w-64 bg-[#0d1410] border-r border-gray-800 flex flex-col">
+      <aside className="w-64 h-[90vh] ml-4 mt-6 bg-[#050505] border border-gray-700 rounded-2xl flex flex-col shadow-[0_10px_40px_rgba(0,0,0,0.8)] backdrop-blur">
         {/* Logo */}
         <div className="p-6 border-b border-gray-800">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 bg-gradient-to-br from-[#ffffff] to-[#ffffff] rounded-lg flex items-center justify-center">
-              <div className="w-6 h-6 bg-[#0d1410] rounded transform rotate-45"></div>
+              <div className="w-6 h-6 bg-[#050505] rounded transform rotate-45"></div>
             </div>
-            <span className="text-white text-xl font-bold">ScaleHub</span>
+            <span className="text-white text-xl font-bold">Scallei</span>
           </div>
         </div>
 
@@ -92,7 +92,7 @@ export function Layout() {
                   className={cn(
                     "flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors",
                     isActive
-                      ? "bg-[#ffffff] text-black"
+                      ? "bg-gray-800 text-white border border-gray-600 shadow-[0_0_12px_rgba(156,163,175,0.35)]"
                       : "text-gray-400 hover:text-white hover:bg-gray-800/50"
                   )}
                 >
@@ -108,7 +108,7 @@ export function Layout() {
               className={cn(
                 "flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-all mt-2",
                 location.pathname === "/vip"
-                  ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-black shadow-[0_0_20px_rgba(234,179,8,0.5)]"
+                  ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-white shadow-[0_0_20px_rgba(234,179,8,0.5)]"
                   : "bg-gradient-to-r from-yellow-500/20 to-yellow-600/20 text-yellow-400 hover:from-yellow-500/30 hover:to-yellow-600/30 border border-yellow-500/30 shadow-[0_0_15px_rgba(234,179,8,0.2)] hover:shadow-[0_0_25px_rgba(234,179,8,0.4)]"
               )}
             >
@@ -119,13 +119,13 @@ export function Layout() {
         </nav>
 
         {/* User Profile */}
-        <div className="p-4 border-t border-gray-800 space-y-2">
+        <div className="mt-auto p-4 border-t border-gray-800 space-y-2">
           <Link
             to="/meu-perfil"
             className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-800/50 transition-colors cursor-pointer"
           >
             <div className="w-8 h-8 bg-[#ffffff] rounded-full flex items-center justify-center">
-              <span className="text-black text-xs font-bold">GB</span>
+              <span className="text-white text-xs font-bold">GB</span>
             </div>
             <div className="flex-1">
               <p className="text-white text-sm font-medium">Gabriel Baluchi</p>
@@ -151,11 +151,11 @@ export function Layout() {
       {/* Main Content */}
       <div className="flex-1 flex flex-col overflow-hidden">
         {/* Header */}
-        <header className="bg-[#0d1410] border-b border-gray-800 px-6 py-4">
+        <header className="bg-[#050505] border-b border-gray-800 px-6 py-4">
           <div className="flex items-center justify-between gap-6">
             {/* Ranking Progress Bar */}
             <div className="flex-1 max-w-2xl">
-              <div className="bg-[#0a0f0d] border border-gray-800 rounded-xl p-4">
+              <div className="bg-[#000000] border border-gray-800 rounded-xl p-4">
                 <div className="flex items-center justify-between mb-2">
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 bg-gradient-to-br from-gray-400 to-gray-600 rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(156,163,175,0.3)]">
@@ -198,14 +198,14 @@ export function Layout() {
               <div className="relative">
                 <button
                   onClick={() => setIsSearchOpen(!isSearchOpen)}
-                  className="p-2.5 bg-[#0a0f0d] border border-gray-800 rounded-lg text-gray-400 hover:text-[#ffffff] hover:border-[#ffffff]/50 transition-all"
+                  className="p-2.5 bg-[#000000] border border-gray-800 rounded-lg text-gray-400 hover:text-[#ffffff] hover:border-[#ffffff]/50 transition-all"
                 >
                   <Search className="w-5 h-5" />
                 </button>
 
                 {/* Search Dropdown */}
                 {isSearchOpen && (
-                  <div className="absolute right-0 mt-2 w-[500px] bg-[#0d1410] border-2 border-[#ffffff]/30 rounded-xl shadow-[0_0_30px_rgba(255,255,255,0.2)] overflow-hidden z-50">
+                  <div className="absolute right-0 mt-2 w-[500px] bg-[#050505] border-2 border-[#ffffff]/30 rounded-xl shadow-[0_0_30px_rgba(255,255,255,0.2)] overflow-hidden z-50">
                     <div className="p-4">
                       <GlobalSearch />
                     </div>
@@ -217,7 +217,7 @@ export function Layout() {
               <div className="relative">
                 <button
                   onClick={() => setIsQuickMenuOpen(!isQuickMenuOpen)}
-                  className="p-2.5 bg-[#0a0f0d] border border-gray-800 rounded-lg text-gray-400 hover:text-[#ffffff] hover:border-[#ffffff]/50 transition-all"
+                  className="p-2.5 bg-[#000000] border border-gray-800 rounded-lg text-gray-400 hover:text-[#ffffff] hover:border-[#ffffff]/50 transition-all"
                 >
                   {isQuickMenuOpen ? (
                     <X className="w-5 h-5" />
@@ -228,7 +228,7 @@ export function Layout() {
 
                 {/* Dropdown Menu */}
                 {isQuickMenuOpen && (
-                  <div className="absolute right-0 mt-2 w-64 bg-[#0d1410] border-2 border-[#ffffff]/30 rounded-xl shadow-[0_0_30px_rgba(255,255,255,0.2)] overflow-hidden z-50">
+                  <div className="absolute right-0 mt-2 w-64 bg-[#050505] border-2 border-[#ffffff]/30 rounded-xl shadow-[0_0_30px_rgba(255,255,255,0.2)] overflow-hidden z-50">
                     <div className="p-3 border-b border-gray-800">
                       <p className="text-xs font-semibold text-gray-400">ACESSO RÁPIDO</p>
                     </div>
@@ -244,7 +244,7 @@ export function Layout() {
                             className={cn(
                               "flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors mb-1",
                               isActive
-                                ? "bg-[#ffffff] text-black"
+                                ? "bg-gray-800 text-white border border-gray-600 shadow-[0_0_12px_rgba(156,163,175,0.35)]"
                                 : "text-gray-400 hover:text-white hover:bg-gray-800/50"
                             )}
                           >
@@ -258,12 +258,12 @@ export function Layout() {
                 )}
               </div>
 
-              <button className="relative p-2.5 bg-[#0a0f0d] border border-gray-800 rounded-lg text-gray-400 hover:text-[#ffffff] hover:border-[#ffffff]/50 transition-all">
+              <button className="relative p-2.5 bg-[#000000] border border-gray-800 rounded-lg text-gray-400 hover:text-[#ffffff] hover:border-[#ffffff]/50 transition-all">
                 <Bell className="w-5 h-5" />
                 <span className="absolute top-1 right-1 w-2 h-2 bg-[#ffffff] rounded-full"></span>
               </button>
 
-              <div className="bg-[#0a0f0d] border border-gray-800 rounded-lg px-4 py-2">
+              <div className="bg-[#000000] border border-gray-800 rounded-lg px-4 py-2">
                 <p className="text-xs text-gray-400">SALDO ATUAL</p>
                 <p className="text-sm font-bold text-[#ffffff]">R$ 0,00</p>
               </div>
@@ -272,7 +272,7 @@ export function Layout() {
         </header>
 
         {/* Page Content */}
-        <main className="flex-1 overflow-y-auto bg-[#0a0f0d] p-6">
+        <main className="flex-1 overflow-y-auto bg-[#000000] p-6">
           <Outlet />
         </main>
       </div>
