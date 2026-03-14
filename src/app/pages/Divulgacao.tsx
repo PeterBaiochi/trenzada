@@ -253,7 +253,7 @@ export function Divulgacao() {
       {/* Header */}
       <div className="flex items-center gap-3 mb-8">
         <div className="w-12 h-12 bg-gradient-to-br from-[#ffffff] to-[#ffffff] rounded-xl flex items-center justify-center">
-          <Share2 className="w-6 h-6 text-black" />
+          <Share2 className="w-6 h-6 text-white" />
         </div>
         <div>
           <h1 className="text-3xl font-bold text-white">
@@ -274,7 +274,7 @@ export function Divulgacao() {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Pesquisar materiais..."
-            className="w-full bg-[#0d1410] border border-gray-800 rounded-lg pl-10 pr-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-[#ffffff]"
+            className="w-full bg-[#050505] border border-gray-800 rounded-lg pl-10 pr-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-[#ffffff]"
           />
         </div>
       </div>
@@ -285,8 +285,8 @@ export function Divulgacao() {
           onClick={() => setSelectedCategory("all")}
           className={`flex items-center gap-2 px-5 py-3 rounded-lg font-medium whitespace-nowrap transition-all ${
             selectedCategory === "all"
-              ? "bg-[#ffffff] text-black shadow-[0_0_20px_rgba(255,255,255,0.3)]"
-              : "bg-[#0d1410] text-gray-400 border border-gray-800 hover:border-[#ffffff]/50"
+              ? "bg-[#ffffff] text-white shadow-[0_0_20px_rgba(255,255,255,0.3)]"
+              : "bg-[#050505] text-gray-400 border border-gray-800 hover:border-[#ffffff]/50"
           }`}
         >
           Todos
@@ -299,14 +299,14 @@ export function Divulgacao() {
               onClick={() => setSelectedCategory(category.id)}
               className={`flex items-center gap-2 px-5 py-3 rounded-lg font-medium whitespace-nowrap transition-all ${
                 selectedCategory === category.id
-                  ? "bg-[#ffffff] text-black shadow-[0_0_20px_rgba(255,255,255,0.3)]"
-                  : "bg-[#0d1410] text-gray-400 border border-gray-800 hover:border-[#ffffff]/50"
+                  ? "bg-[#ffffff] text-white shadow-[0_0_20px_rgba(255,255,255,0.3)]"
+                  : "bg-[#050505] text-gray-400 border border-gray-800 hover:border-[#ffffff]/50"
               }`}
             >
               <Icon
                 className={`w-5 h-5 ${
                   selectedCategory === category.id
-                    ? "text-black"
+                    ? "text-white"
                     : category.color
                 }`}
               />
@@ -328,7 +328,7 @@ export function Divulgacao() {
           {filteredMaterials.map((material) => (
             <div
               key={material.id}
-              className="bg-[#0d1410] border-2 border-gray-800 rounded-xl overflow-hidden hover:border-[#ffffff]/50 transition-all shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] group"
+              className="bg-[#050505] border-2 border-gray-800 rounded-xl overflow-hidden hover:border-[#ffffff]/50 transition-all shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] group"
             >
               {/* Preview */}
               {material.preview ? (
@@ -338,10 +338,10 @@ export function Divulgacao() {
                     alt={material.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <div className="absolute inset-0 bg-[#000000]/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                     <button
                       onClick={() => handlePreview(material)}
-                      className="flex items-center gap-2 px-4 py-2 bg-white text-black rounded-lg font-medium hover:bg-gray-100 transition-colors"
+                      className="flex items-center gap-2 px-4 py-2 bg-[#121214] text-white rounded-lg font-medium hover:bg-[#1a1a1f] transition-colors"
                     >
                       <Eye className="w-4 h-4" />
                       Visualizar
@@ -350,7 +350,7 @@ export function Divulgacao() {
                 </div>
               ) : (
                 <div className="h-48 bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
-                  <FileText className="w-16 h-16 text-gray-600" />
+                  <FileText className="w-16 h-16 text-gray-400" />
                 </div>
               )}
 
@@ -383,7 +383,7 @@ export function Divulgacao() {
 
                   <button
                     onClick={() => handleDownload(material)}
-                    className="flex items-center gap-2 px-4 py-2 bg-[#ffffff] text-black font-semibold rounded-lg hover:bg-[#ffffff] transition-colors shadow-[0_0_15px_rgba(255,255,255,0.3)] hover:shadow-[0_0_25px_rgba(255,255,255,0.5)]"
+                    className="flex items-center gap-2 px-4 py-2 bg-[#ffffff] text-white font-semibold rounded-lg hover:bg-[#ffffff] transition-colors shadow-[0_0_15px_rgba(255,255,255,0.3)] hover:shadow-[0_0_25px_rgba(255,255,255,0.5)]"
                   >
                     <Download className="w-4 h-4" />
                     Baixar
@@ -394,8 +394,8 @@ export function Divulgacao() {
           ))}
         </div>
       ) : (
-        <div className="bg-[#0d1410] border-2 border-gray-800 border-dashed rounded-xl p-12 text-center">
-          <Share2 className="w-16 h-16 text-gray-600 mx-auto mb-4" />
+        <div className="bg-[#050505] border-2 border-gray-800 border-dashed rounded-xl p-12 text-center">
+          <Share2 className="w-16 h-16 text-gray-400 mx-auto mb-4" />
           <h3 className="text-xl font-semibold text-gray-400 mb-2">
             Nenhum material encontrado
           </h3>
@@ -406,7 +406,7 @@ export function Divulgacao() {
       )}
 
       {/* Info Box */}
-      <div className="mt-8 bg-[#0d1410]/50 border border-gray-800 rounded-xl p-6">
+      <div className="mt-8 bg-[#050505]/50 border border-gray-800 rounded-xl p-6">
         <h3 className="text-lg font-bold text-[#ffffff] mb-4">
           💡 Como usar os materiais:
         </h3>
